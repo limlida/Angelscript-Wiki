@@ -1,0 +1,122 @@
+# ============================================================================
+# Angelscript Wiki — .gitignore
+# ============================================================================
+# 受跟踪的核心目录：
+#   raw/      — 原始资料层（source of truth，包含 API/Global/、API/Structs/）
+#   wiki/     — 知识库内容（entities/、concepts/、sources/、syntheses/）
+#   Scripts/  — 工具脚本（PowerShell）
+#   Test/     — 测试代码（.as）
+# 受跟踪的核心文件：
+#   AGENTS.md / index.md / log.md / .gitignore
+# ============================================================================
+
+
+# ─── Obsidian 本地用户态 ────────────────────────────────────────────────────
+# 仅忽略 UI 状态文件（每位协作者各自不同），保留 plugins/themes/hotkeys 等
+# 共享配置，让所有人共用同一套外观与插件。
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/cache
+.obsidian/.cache/
+
+
+# ─── OS 系统文件 ────────────────────────────────────────────────────────────
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ─── 编辑器 / IDE ───────────────────────────────────────────────────────────
+.vscode/
+.cursor/
+.trae/
+.idea/
+.obsidian/
+.history/
+*.iml
+*.code-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*.swn
+.*.un~
+\#*\#
+.\#*
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+
+# ─── 临时 / 备份文件 ────────────────────────────────────────────────────────
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+*.rej
+~$*
+.~lock.*
+
+
+# ─── 日志（log.md 是知识库核心,必须保留） ─────────────────────────────────
+*.log
+!log.md
+
+
+# ─── PowerShell 脚本副产物（如有） ─────────────────────────────────────────
+Scripts/output/
+Scripts/*.log
+Scripts/*.cache
+
+
+# ─── 防御性规则（当前未用,但避免将来误提交） ──────────────────────────────
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+
+# 大文件 / 压缩包（如需归档应单独处理）
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.rar
+
+
+# ─── 用户私有内容（按需启用） ──────────────────────────────────────────────
+# 取消下列注释可让对应路径不被追踪
+# wiki/private/
+# drafts/
+# notes-local/
