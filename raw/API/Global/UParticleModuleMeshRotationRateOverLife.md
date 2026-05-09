@@ -1,0 +1,12 @@
+### UParticleModuleMeshRotationRateOverLife
+
+
+**属性**:
+
+- `FRawDistributionVector RotRate [The rotation rate desired.
+The value is retrieved using the RelativeTime of the particle.]`
+- `bool bScaleRotRate [If true, scale the current rotation rate by the value retrieved.
+Otherwise, set the rotation rate to the value retrieved.]`
+
+---
+

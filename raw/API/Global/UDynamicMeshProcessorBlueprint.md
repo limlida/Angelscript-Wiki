@@ -1,0 +1,20 @@
+### UDynamicMeshProcessorBlueprint
+
+
+Blueprints with this parent class can define general processing to apply to a dynamic mesh
+which can then be used to define procedural operations e.g. in Dataflow or other contexts
+
+**属性**:
+
+- `bool bRequiresGameThread [Whether the blueprint must be run on the game thread -- i.e. if it may use nodes that aren't thread safe.]`
+
+
+**方法**:
+
+- `ProcessDynamicMesh(UDynamicMesh TargetMesh, bool& bFailed)`  
+  Apply some processing to change the input mesh
+@param TargetMesh Mesh to update (in place)
+@param bFailed Set to true to report that the processing has failed
+
+---
+

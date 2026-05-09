@@ -1,0 +1,4 @@
+### UAnimationEditorsAssetFamilyExtension_AnimBlueprintAsset
+
+---
+

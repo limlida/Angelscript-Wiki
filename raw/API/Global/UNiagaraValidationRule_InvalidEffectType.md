@@ -1,0 +1,6 @@
+### UNiagaraValidationRule_InvalidEffectType
+
+
+This validation rule always fails and can be used to mark a default/test effect type as stand-in that must be changed. Effectively forces the user to choose a correct effect type for a system.
+---
+

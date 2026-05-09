@@ -1,0 +1,6 @@
+### UMovieSceneComponentAttachmentInvalidatorSystem
+
+
+namespace UE
+---
+

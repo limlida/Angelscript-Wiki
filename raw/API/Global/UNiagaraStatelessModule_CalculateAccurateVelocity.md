@@ -1,0 +1,4 @@
+### UNiagaraStatelessModule_CalculateAccurateVelocity
+
+---
+

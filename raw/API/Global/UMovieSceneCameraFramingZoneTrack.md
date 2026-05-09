@@ -1,0 +1,4 @@
+### UMovieSceneCameraFramingZoneTrack
+
+---
+

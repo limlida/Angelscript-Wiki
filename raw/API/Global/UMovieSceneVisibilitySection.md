@@ -1,0 +1,6 @@
+### UMovieSceneVisibilitySection
+
+
+A spawn section.
+---
+

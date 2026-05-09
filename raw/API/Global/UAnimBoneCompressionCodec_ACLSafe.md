@@ -1,0 +1,6 @@
+### UAnimBoneCompressionCodec_ACLSafe
+
+
+Uses the open source Animation Compression Library with the safest and least destructive settings suitable when animations must be preserved with near raw fidelity.
+---
+

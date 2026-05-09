@@ -1,0 +1,6 @@
+### UTemplateSequence
+
+
+* Movie scene animation that can be instanced multiple times inside a level sequence.
+---
+

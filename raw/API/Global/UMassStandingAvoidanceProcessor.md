@@ -1,0 +1,6 @@
+### UMassStandingAvoidanceProcessor
+
+
+Avoidance while standing.
+---
+

@@ -1,0 +1,6 @@
+### UMovieScenePropertySystem
+
+
+Abstract base class for any property system that deals with a property registered with FBuiltInComponentTypes::PropertyRegistry
+---
+

@@ -1,0 +1,4 @@
+### UGameplayTask_ClaimResource
+
+---
+

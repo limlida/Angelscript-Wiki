@@ -1,0 +1,4 @@
+### AWorldPartitionStandaloneHLOD
+
+---
+

@@ -1,0 +1,4 @@
+### UInterchangeDecalMaterialNode
+
+---
+

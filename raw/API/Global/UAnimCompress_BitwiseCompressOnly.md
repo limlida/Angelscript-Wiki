@@ -1,0 +1,4 @@
+### UAnimCompress_BitwiseCompressOnly
+
+---
+

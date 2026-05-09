@@ -1,0 +1,6 @@
+### UUVEditorUVTransformPropertiesBase
+
+
+UV Transform Settings
+---
+

@@ -1,0 +1,4 @@
+### UMovieSceneNiagaraTrackRecorder
+
+---
+

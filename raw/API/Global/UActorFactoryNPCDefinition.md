@@ -1,0 +1,4 @@
+### UActorFactoryNPCDefinition
+
+---
+

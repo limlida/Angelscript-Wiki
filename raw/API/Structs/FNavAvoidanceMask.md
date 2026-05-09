@@ -1,0 +1,45 @@
+### FNavAvoidanceMask
+
+
+**属性**:
+
+- `bool bGroup0`
+- `bool bGroup1`
+- `bool bGroup10`
+- `bool bGroup11`
+- `bool bGroup12`
+- `bool bGroup13`
+- `bool bGroup14`
+- `bool bGroup15`
+- `bool bGroup16`
+- `bool bGroup17`
+- `bool bGroup18`
+- `bool bGroup19`
+- `bool bGroup2`
+- `bool bGroup20`
+- `bool bGroup21`
+- `bool bGroup22`
+- `bool bGroup23`
+- `bool bGroup24`
+- `bool bGroup25`
+- `bool bGroup26`
+- `bool bGroup27`
+- `bool bGroup28`
+- `bool bGroup29`
+- `bool bGroup3`
+- `bool bGroup30`
+- `bool bGroup31`
+- `bool bGroup4`
+- `bool bGroup5`
+- `bool bGroup6`
+- `bool bGroup7`
+- `bool bGroup8`
+- `bool bGroup9`
+
+
+**方法**:
+
+- `FNavAvoidanceMask& opAssign(FNavAvoidanceMask Other)`
+
+---
+

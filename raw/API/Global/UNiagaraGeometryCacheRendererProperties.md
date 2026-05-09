@@ -1,0 +1,16 @@
+### UNiagaraGeometryCacheRendererProperties
+
+
+**属性**:
+
+- `uint ComponentCountLimit [The max number of components that this emitter will spawn or update each frame.]`
+- `TArray<FNiagaraGeometryCacheReference> GeometryCaches [Reference to the geometry cache assets to use. If ArrayIndexBinding is not set, a random element is used for each particle.]`
+- `FNiagaraRendererMaterialParameters MaterialParameters [If this array has entries, we will create a MaterialInstanceDynamic per Emitter instance from Material and set the Material parameters using the Niagara simulation variables listed.]`
+- `int RendererVisibility [If a render visibility tag is present, particles whose tag matches this value will be visible in this renderer.]`
+- `ENiagaraRendererSourceDataMode SourceMode [Whether or not to draw a single element for the Emitter or to draw the particles.]`
+- `bool bAssignComponentsOnParticleID [If true then components will not be automatically assigned to the first particle available, but try to stick to the same particle based on its unique id.
+Disabling this option is faster, but a particle can get a different component each tick, which can lead to problems with for example motion blur.]`
+- `bool bIsLooping [If true, then the geometry cache keeps playing in a loop]`
+
+---
+

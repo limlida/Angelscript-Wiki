@@ -1,0 +1,4 @@
+### UDatasmithLightComponentTemplate
+
+---
+

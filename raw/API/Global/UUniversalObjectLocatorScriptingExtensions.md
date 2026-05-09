@@ -1,0 +1,6 @@
+### UUniversalObjectLocatorScriptingExtensions
+
+
+Function library containing methods that should be hoisted onto FUniversalObjectLocators for scripting
+---
+

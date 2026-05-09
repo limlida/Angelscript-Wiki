@@ -1,0 +1,39 @@
+### UMetaSoundEditorBuilderListener
+
+
+**属性**:
+
+- `FOnMetaSoundBuilderDocumentMetadataStringChanged OnDocumentAuthorChangedDelegate`
+- `FOnMetaSoundBuilderDocumentMetadataTextArrayChanged OnDocumentCategoryHierarchyChangedDelegate`
+- `FOnMetaSoundBuilderDocumentMetadataTextChanged OnDocumentDescriptionChangedDelegate`
+- `FOnMetaSoundBuilderDocumentMetadataTextChanged OnDocumentDisplayNameChangedDelegate`
+- `FOnMetaSoundBuilderDocumentMetadataBoolChanged OnDocumentIsDeprecatedChangedDelegate`
+- `FOnMetaSoundBuilderDocumentMetadataTextArrayChanged OnDocumentKeywordsChangedDelegate`
+- `FOnMetaSoundBuilderGraphInterfaceMutate OnGraphInputAddedDelegate`
+- `FOnMetaSoundBuilderGraphInterfaceMutate OnGraphInputDataTypeChangedDelegate`
+- `FOnMetaSoundBuilderGraphLiteralMutate OnGraphInputDefaultChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexTextChanged OnGraphInputDescriptionChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexTextChanged OnGraphInputDisplayNameChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexBoolChanged OnGraphInputInheritsDefaultChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexBoolChanged OnGraphInputIsAdvancedDisplayChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexBoolChanged OnGraphInputIsConstructorPinChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexRename OnGraphInputNameChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexIntChanged OnGraphInputSortOrderIndexChangedDelegate`
+- `FOnMetaSoundBuilderGraphInterfaceMutate OnGraphOutputAddedDelegate`
+- `FOnMetaSoundBuilderGraphInterfaceMutate OnGraphOutputDataTypeChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexTextChanged OnGraphOutputDescriptionChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexTextChanged OnGraphOutputDisplayNameChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexBoolChanged OnGraphOutputIsAdvancedDisplayChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexBoolChanged OnGraphOutputIsConstructorPinChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexRename OnGraphOutputNameChangedDelegate`
+- `FOnMetaSoundBuilderGraphVertexIntChanged OnGraphOutputSortOrderIndexChangedDelegate`
+- `FOnMetaSoundBuilderGraphInterfaceMutate OnRemovingGraphInputDelegate`
+- `FOnMetaSoundBuilderGraphInterfaceMutate OnRemovingGraphOutputDelegate`
+
+
+**方法**:
+
+- `RemoveAllDelegates()`
+
+---
+

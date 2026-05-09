@@ -1,0 +1,4 @@
+### UMaterialExpressionScalarBlueNoise
+
+---
+

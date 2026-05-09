@@ -1,0 +1,6 @@
+### ULightMapVirtualTexture
+
+
+Deprecated class
+---
+

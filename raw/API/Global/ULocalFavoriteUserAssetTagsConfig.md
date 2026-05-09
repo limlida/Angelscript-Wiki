@@ -1,0 +1,4 @@
+### ULocalFavoriteUserAssetTagsConfig
+
+---
+

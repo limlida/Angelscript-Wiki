@@ -1,0 +1,4 @@
+### UMovieSceneMuteSoloDecoration
+
+---
+

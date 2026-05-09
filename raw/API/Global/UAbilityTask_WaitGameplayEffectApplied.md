@@ -1,0 +1,4 @@
+### UAbilityTask_WaitGameplayEffectApplied
+
+---
+

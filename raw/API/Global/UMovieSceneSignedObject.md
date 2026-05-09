@@ -1,0 +1,6 @@
+### UMovieSceneSignedObject
+
+
+namespace UE
+---
+

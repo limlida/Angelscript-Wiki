@@ -1,0 +1,6 @@
+### UMetasoundEditorGraphBase
+
+
+namespace Metasound::Engine
+---
+

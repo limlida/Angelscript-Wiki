@@ -1,0 +1,4 @@
+### UEditorGizmoRegistryCategoryEntry_ConditionalSelection
+
+---
+

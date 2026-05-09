@@ -1,0 +1,15 @@
+### FSourceEffectPannerSettings
+
+
+**属性**:
+
+- `float32 Pan [The pan of the source. -1.0 means left, 0.0 means center, 1.0 means right.]`
+- `float32 Spread [The spread of the source. 1.0 means left only in left channel, right only in right; 0.0 means both mixed, -1.0 means right and left channels are inverted.]`
+
+
+**方法**:
+
+- `FSourceEffectPannerSettings& opAssign(FSourceEffectPannerSettings Other)`
+
+---
+

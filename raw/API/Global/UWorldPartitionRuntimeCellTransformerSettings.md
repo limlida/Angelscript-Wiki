@@ -1,0 +1,4 @@
+### UWorldPartitionRuntimeCellTransformerSettings
+
+---
+

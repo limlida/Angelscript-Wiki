@@ -1,0 +1,6 @@
+### UMovieSceneWidgetMaterialSystem
+
+
+namespace UE::MovieScene
+---
+

@@ -1,0 +1,4 @@
+### UMovieSceneSectionAnchorsDecoration
+
+---
+

@@ -1,0 +1,6 @@
+### UOptimusNode_AnimAttributeDataInterface
+
+
+Deprecated
+---
+

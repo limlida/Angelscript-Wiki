@@ -1,0 +1,9 @@
+### UNiagaraObjectAssetHelper
+
+
+**属性**:
+
+- `FSoftObjectPath Path [We are customizing the instance property metadata for this to restrict the allowed classes in the UI]`
+
+---
+

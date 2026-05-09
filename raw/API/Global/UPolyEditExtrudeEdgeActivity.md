@@ -1,0 +1,6 @@
+### UPolyEditExtrudeEdgeActivity
+
+
+Extrudes boundary edges.
+---
+

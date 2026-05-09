@@ -1,0 +1,4 @@
+### USharedImageConstRefBlueprintFns
+
+---
+

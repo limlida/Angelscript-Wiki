@@ -1,0 +1,4 @@
+### UAutoRTFMTestPrimitiveComponent
+
+---
+

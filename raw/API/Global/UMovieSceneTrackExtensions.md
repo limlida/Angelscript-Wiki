@@ -1,0 +1,6 @@
+### UMovieSceneTrackExtensions
+
+
+Function library containing methods that should be hoisted onto UMovieSceneTracks for scripting
+---
+

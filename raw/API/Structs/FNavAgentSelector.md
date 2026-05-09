@@ -1,0 +1,29 @@
+### FNavAgentSelector
+
+
+**属性**:
+
+- `bool bSupportsAgent0`
+- `bool bSupportsAgent1`
+- `bool bSupportsAgent10`
+- `bool bSupportsAgent11`
+- `bool bSupportsAgent12`
+- `bool bSupportsAgent13`
+- `bool bSupportsAgent14`
+- `bool bSupportsAgent15`
+- `bool bSupportsAgent2`
+- `bool bSupportsAgent3`
+- `bool bSupportsAgent4`
+- `bool bSupportsAgent5`
+- `bool bSupportsAgent6`
+- `bool bSupportsAgent7`
+- `bool bSupportsAgent8`
+- `bool bSupportsAgent9`
+
+
+**方法**:
+
+- `FNavAgentSelector& opAssign(FNavAgentSelector Other)`
+
+---
+

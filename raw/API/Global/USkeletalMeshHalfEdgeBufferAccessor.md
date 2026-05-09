@@ -1,0 +1,4 @@
+### USkeletalMeshHalfEdgeBufferAccessor
+
+---
+

@@ -1,0 +1,9 @@
+### UMaterialExpressionSubstrateVerticalLayering
+
+
+**属性**:
+
+- `bool bUseParameterBlending [Merge Top and Base into a single material by mixing their inputs rather than their evaluation. This makes lighting evaluation cheaper (Default: off)]`
+
+---
+

@@ -1,0 +1,6 @@
+### UMovieSceneVisibilitySystem
+
+
+namespace UE::MovieScene
+---
+

@@ -1,0 +1,6 @@
+### UBlueprintPaletteFavorites
+
+
+FBlueprintPaletteFavorites
+---
+

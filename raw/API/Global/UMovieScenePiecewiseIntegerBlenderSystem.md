@@ -1,0 +1,6 @@
+### UMovieScenePiecewiseIntegerBlenderSystem
+
+
+namespace UE
+---
+

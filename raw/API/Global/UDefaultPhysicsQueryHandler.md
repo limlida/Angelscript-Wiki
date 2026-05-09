@@ -1,0 +1,4 @@
+### UDefaultPhysicsQueryHandler
+
+---
+

@@ -1,0 +1,6 @@
+### UTextureColorAdapterClickToolBuilder
+
+
+Builder for UTextureColorAdapterClickTool
+---
+

@@ -1,0 +1,4 @@
+### UMovieSceneAnimationTrackRecorderSettings
+
+---
+

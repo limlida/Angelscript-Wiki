@@ -1,0 +1,4 @@
+### UNiagaraSystemThumbnailRenderer
+
+---
+

@@ -1,0 +1,28 @@
+### FAudioComponentParam
+
+
+Legacy struct used for storing named parameter for a given AudioComponent.
+
+**属性**:
+
+- `TArray<bool> ArrayBoolParam [Boolean value of parameter]`
+- `TArray<float32> ArrayFloatParam [Array Float value of parameter]`
+- `TArray<int> ArrayIntParam [Integer value of parameter]`
+- `TArray<TObjectPtr<UObject>> ArrayObjectParam [Object value of parameter]`
+- `TArray<FString> ArrayStringParam [String value of parameter]`
+- `bool BoolParam [Boolean value of parameter]`
+- `float32 FloatParam [Float value of parameter]`
+- `int IntParam [Integer value of parameter. If set to 'Default Construct', value is number of array items to construct.]`
+- `UObject ObjectParam [Object value of parameter]`
+- `FName ParamName [Name of the parameter]`
+- `EAudioParameterType ParamType`
+- `USoundWave SoundWaveParam [DEPRECATED]`
+- `FString StringParam [String value of parameter]`
+
+
+**方法**:
+
+- `FAudioComponentParam& opAssign(FAudioComponentParam Other)`
+
+---
+

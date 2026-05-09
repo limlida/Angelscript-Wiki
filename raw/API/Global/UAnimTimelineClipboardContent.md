@@ -1,0 +1,8 @@
+### UAnimTimelineClipboardContent
+
+
+/
+ Animation Timeline Clipboard
+/
+---
+

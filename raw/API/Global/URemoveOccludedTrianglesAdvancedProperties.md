@@ -1,0 +1,6 @@
+### URemoveOccludedTrianglesAdvancedProperties
+
+
+Advanced properties
+---
+

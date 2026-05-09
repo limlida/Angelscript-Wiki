@@ -1,0 +1,6 @@
+### UObjectPtrDerrivedTestClass
+
+
+derived test class
+---
+

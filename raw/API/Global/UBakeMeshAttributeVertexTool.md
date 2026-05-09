@@ -1,0 +1,6 @@
+### UBakeMeshAttributeVertexTool
+
+
+Vertex Baking Tool
+---
+

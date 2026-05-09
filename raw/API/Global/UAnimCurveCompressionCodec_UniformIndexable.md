@@ -1,0 +1,4 @@
+### UAnimCurveCompressionCodec_UniformIndexable
+
+---
+

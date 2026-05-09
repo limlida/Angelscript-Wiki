@@ -1,0 +1,6 @@
+### UMovieSceneFloatTrack
+
+
+Handles manipulation of float properties in a movie scene
+---
+

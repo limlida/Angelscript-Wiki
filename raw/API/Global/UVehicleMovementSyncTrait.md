@@ -1,0 +1,4 @@
+### UVehicleMovementSyncTrait
+
+---
+

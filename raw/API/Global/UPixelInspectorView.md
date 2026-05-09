@@ -1,0 +1,6 @@
+### UPixelInspectorView
+
+
+Note: UPixelInspectorView is only ever created as a transient object, so making properties transient is redundant.
+---
+

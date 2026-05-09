@@ -1,0 +1,6 @@
+### UVertexAdapterClickToolBuilder
+
+
+Builder for UVertexAdapterClickTool
+---
+

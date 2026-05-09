@@ -1,0 +1,4 @@
+### UMeshPaintSelectionMechanic
+
+---
+

@@ -1,0 +1,12 @@
+### UNiagaraDataInterfaceVector2DCurve
+
+
+Data Interface allowing sampling of vector curves.
+
+**属性**:
+
+- `FRichCurve XCurve []`
+- `FRichCurve YCurve []`
+
+---
+

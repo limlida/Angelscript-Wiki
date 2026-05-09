@@ -1,0 +1,4 @@
+### UTestTypedElementInterfaceA_ImplTyped
+
+---
+

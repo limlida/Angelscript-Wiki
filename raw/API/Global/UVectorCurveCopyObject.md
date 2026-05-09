@@ -1,0 +1,4 @@
+### UVectorCurveCopyObject
+
+---
+

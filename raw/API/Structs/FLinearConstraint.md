@@ -1,0 +1,24 @@
+### FLinearConstraint
+
+
+Distance constraint
+
+**属性**:
+
+- `float32 ContactDistance [Determines how close to the limit we have to get before turning the joint on. Larger value will be more expensive, but will do a better job not violating constraints. A smaller value will be more efficient, but easier to violate.]`
+- `float32 Damping [Damping of the soft constraint. Only used when Soft Constraint is on.]`
+- `float32 Limit [The distance allowed between the two joint reference frames. Distance applies on all axes enabled (one axis means line, two axes implies circle, three axes implies sphere)]`
+- `float32 Restitution [Controls the amount of bounce when the constraint is violated. A restitution value of 1 will bounce back with the same velocity the limit was hit. A value of 0 will stop dead.]`
+- `float32 Stiffness [Stiffness of the soft constraint. Only used when Soft Constraint is on.]`
+- `ELinearConstraintMotion XMotion [Indicates the linear constraint applied along the X-axis. Free implies no constraint at all. Locked implies no movement along X is allowed. Limited implies the distance in the joint along all active axes must be less than the Distance provided.]`
+- `ELinearConstraintMotion YMotion [Indicates the linear constraint applied along the Y-axis. Free implies no constraint at all. Locked implies no movement along Y is allowed. Limited implies the distance in the joint along all active axes must be less than the Distance provided.]`
+- `ELinearConstraintMotion ZMotion [Indicates the linear constraint applied along theZX-axis. Free implies no constraint at all. Locked implies no movement along Z is allowed. Limited implies the distance in the joint along all active axes must be less than the Distance provided.]`
+- `bool bSoftConstraint [Whether we want to use a soft constraint (spring).]`
+
+
+**方法**:
+
+- `FLinearConstraint& opAssign(FLinearConstraint Other)`
+
+---
+

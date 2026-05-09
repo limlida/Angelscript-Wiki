@@ -1,0 +1,24 @@
+### FActivateDevicePropertyParams
+
+
+Parameters for the UInputDeviceSubsystem::ActivateDeviceProperty function
+
+**属性**:
+
+- `FInputDeviceId DeviceId [The Input Device that should receive the device property. If nothing is specified here,
+then the Platform User's default input device will be used.
+
+The default input device is obtained from IPlatformInputDeviceMapper::GetPrimaryInputDeviceForUser]`
+- `FPlatformUserId UserId [The Platform User whose device's should receive the device property]`
+- `bool bIgnoreTimeDilation [If true, then this device property will ignore dilated delta time and use the Applications delta time instead]`
+- `bool bLooping [If true, then the input device property will not be removed after it's evaluation time has completed.
+Instead, it will remain active until manually removed with a RemoveDeviceProperty call.]`
+- `bool bPlayWhilePaused [If true, then this device property will be played even if the game world is paused.]`
+
+
+**方法**:
+
+- `FActivateDevicePropertyParams& opAssign(FActivateDevicePropertyParams Other)`
+
+---
+

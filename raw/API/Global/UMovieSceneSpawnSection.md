@@ -1,0 +1,6 @@
+### UMovieSceneSpawnSection
+
+
+A spawn section.
+---
+

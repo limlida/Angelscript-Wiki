@@ -1,0 +1,15 @@
+### FApplicationLifetimeDelegate__ApplicationLifecycleComponent
+
+
+**方法**:
+
+- `FApplicationLifetimeDelegate__ApplicationLifecycleComponent& opAssign(FApplicationLifetimeDelegate__ApplicationLifecycleComponent Other)`
+- `bool IsBound() const`
+- `Clear()`
+- `AddUFunction(const UObject Object, FName FunctionName)`
+- `Unbind(UObject Object, FName FunctionName)`
+- `UnbindObject(UObject Object)`
+- `Broadcast() const`
+
+---
+

@@ -1,0 +1,4 @@
+### UWidgetCheckedStateRegistration
+
+---
+

@@ -1,0 +1,6 @@
+### UTextureAssetAdapterClickToolBuilder
+
+
+Builder for UTextureAssetAdapterClickTool
+---
+

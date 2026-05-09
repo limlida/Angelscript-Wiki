@@ -1,0 +1,4 @@
+### UControlRigGraphSchema
+
+---
+

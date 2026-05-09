@@ -1,0 +1,4 @@
+### UNiagaraHierarchyEmitterProperties
+
+---
+

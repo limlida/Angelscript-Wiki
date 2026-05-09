@@ -1,0 +1,85 @@
+### UInterchangeMaterialFactoryNode
+
+
+**方法**:
+
+- `bool ConnectOutputToAnisotropy(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToBaseColor(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToClearCoat(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToClearCoatNormal(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToClearCoatRoughness(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToCloth(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToDisplacement(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToEmissiveColor(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToFuzzColor(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToMetallic(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToNormal(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToOcclusion(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToOpacity(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToRefraction(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToRoughness(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToSpecular(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToSubsurface(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToSurfaceCoverage(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToTangent(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectOutputToTransmissionColor(FString ExpressionNodeUid, FString OutputName)`
+- `bool ConnectToAnisotropy(FString ExpressionNodeUid)`
+- `bool ConnectToBaseColor(FString AttributeValue)`
+- `bool ConnectToClearCoat(FString AttributeValue)`
+- `bool ConnectToClearCoatNormal(FString AttributeValue)`
+- `bool ConnectToClearCoatRoughness(FString AttributeValue)`
+- `bool ConnectToCloth(FString AttributeValue)`
+- `bool ConnectToDisplacement(FString AttributeValue)`
+- `bool ConnectToEmissiveColor(FString ExpressionNodeUid)`
+- `bool ConnectToFuzzColor(FString AttributeValue)`
+- `bool ConnectToMetallic(FString AttributeValue)`
+- `bool ConnectToNormal(FString ExpressionNodeUid)`
+- `bool ConnectToOcclusion(FString AttributeValue)`
+- `bool ConnectToOpacity(FString AttributeValue)`
+- `bool ConnectToRefraction(FString AttributeValue)`
+- `bool ConnectToRoughness(FString ExpressionNodeUid)`
+- `bool ConnectToSpecular(FString ExpressionNodeUid)`
+- `bool ConnectToSubsurface(FString ExpressionNodeUid)`
+- `bool ConnectToSurfaceCoverage(FString ExpressionUid)`
+- `bool ConnectToTangent(FString ExpressionNodeUid)`
+- `bool ConnectToTransmissionColor(FString AttributeValue)`
+- `bool GetAnisotropyConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetBaseColorConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetClearCoatConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetClearCoatNormalConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetClearCoatRoughnessConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetClothConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetCustomBlendMode(EBlendMode& AttributeValue) const`
+- `bool GetCustomDisplacementCenter(float32& AttributeValue) const`
+- `bool GetCustomOpacityMaskClipValue(float32& AttributeValue) const`
+- `bool GetCustomRefractionMethod(ERefractionMode& AttributeValue) const`
+- `bool GetCustomScreenSpaceReflections(bool& AttributeValue) const`
+- `bool GetCustomShadingModel(EMaterialShadingModel& AttributeValue) const`
+- `bool GetCustomTranslucencyLightingMode(ETranslucencyLightingMode& AttributeValue) const`
+- `bool GetCustomTwoSided(bool& AttributeValue) const`
+- `bool GetDisplacementConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetEmissiveColorConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetFuzzColorConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetMetallicConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetNormalConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetOcclusionConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetOpacityConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetRefractionConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetRoughnessConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetSpecularConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetSubsurfaceConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetSurfaceCoverageConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetTangentConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool GetTransmissionColorConnection(FString& ExpressionNodeUid, FString& OutputName) const`
+- `bool SetCustomBlendMode(EBlendMode AttributeValue, bool bAddApplyDelegate = true)`
+- `bool SetCustomDisplacementCenter(float32 AttributeValue)`
+- `bool SetCustomOpacityMaskClipValue(float32 AttributeValue, bool bAddApplyDelegate = true)`
+- `bool SetCustomRefractionMethod(ERefractionMode AttributeValue, bool bAddApplyDelegate = true)`
+- `bool SetCustomScreenSpaceReflections(bool AttributeValue)`
+- `bool SetCustomShadingModel(EMaterialShadingModel AttributeValue, bool bAddApplyDelegate = true)`
+- `bool SetCustomTranslucencyLightingMode(ETranslucencyLightingMode AttributeValue, bool bAddApplyDelegate = true)`
+- `bool SetCustomTwoSided(bool AttributeValue, bool bAddApplyDelegate = true)`  
+  Sets if this shader graph should be rendered two sided or not. Defaults to off.
+
+---
+

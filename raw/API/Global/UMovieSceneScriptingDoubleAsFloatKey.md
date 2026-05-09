@@ -1,0 +1,4 @@
+### UMovieSceneScriptingDoubleAsFloatKey
+
+---
+

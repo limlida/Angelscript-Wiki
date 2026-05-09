@@ -1,0 +1,4 @@
+### UAssetEditor_TaggedAssetBrowserConfiguration
+
+---
+

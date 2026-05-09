@@ -1,0 +1,209 @@
+### URendererSettings
+
+
+Rendering settings.
+
+**属性**:
+
+- `FVector2D BlueChromaticityCoordinate [Working color space blue chromaticity coordinates.]`
+- `EClearSceneOptions ClearSceneMethod [Select how the g-buffer is cleared in game mode (only affects deferred shading).]`
+- `ECustomDepthStencil CustomDepthStencil [Whether the custom depth pass for tagging primitives for postprocessing passes is enabled. Enabling it on demand can save memory but may cause a hitch the first time the feature is used.]`
+- `EDefaultBackBufferPixelFormat DefaultBackBufferPixelFormat [Pixel format used for back buffer, when not specified. This setting is currently incompatible with variable DisplayGamma and HDR mode.]`
+- `FPerPlatformInt DefaultBoneInfluenceLimit [When BoneInfluenceLimit on a skeletal mesh LOD is set to 0, this setting is used instead. If this setting is 0, no limit will be applied here and the max bone influences will be determined by other project settings. Changing this setting requires restarting the editor.]`
+- `EAntiAliasingMethod DefaultFeatureAntiAliasing [Selects the anti-aliasing method to use.]`
+- `EAutoExposureMethodUI DefaultFeatureAutoExposure [The default method for AutoExposure(postprocess volume/camera/game setting can still override and enable or disable it independently)]`
+- `float32 DefaultFeatureAutoExposureBias [Default Value for auto exposure bias.]`
+- `float32 DefaultFeatureLocalExposureHighlightContrast [Default Value for Local Exposure Highlight Contrast.]`
+- `float32 DefaultFeatureLocalExposureShadowContrast [Default Value for Local Exposure Shadow Contrast.]`
+- `ELightUnits DefaultLightUnits [Which units to use for newly placed point, spot and rect lights]`
+- `float32 DefaultManualScreenPercentage []`
+- `EScreenPercentageMode DefaultScreenPercentageDesktopMode []`
+- `EScreenPercentageMode DefaultScreenPercentageMobileMode []`
+- `EScreenPercentageMode DefaultScreenPercentagePathTracerMode []`
+- `EScreenPercentageMode DefaultScreenPercentageVRMode []`
+- `ESkinCacheDefaultBehavior DefaultSkinCacheBehavior [Default behavior if all skeletal meshes are included/excluded from the skin cache. If Support Ray Tracing is enabled on a mesh, the skin cache will be used for Ray Tracing updates on that mesh regardless of this setting.]`
+- `float32 DistanceFieldVoxelDensity [Determines how the default scale of a mesh converts into distance field voxel dimensions. Changing this will cause all distance fields to be rebuilt.  Large values can consume memory very quickly!  Changing this setting requires restarting the editor.]`
+- `EDynamicGlobalIlluminationMethod DynamicGlobalIllumination [Dynamic Global Illumination Method]`
+- `EEarlyZPass EarlyZPass [Whether to use a depth only pass to initialize Z culling for the base pass.]`
+- `EFixedFoveationLevels FoveationLevel [Set the level of foveation to apply when generating the Variable Rate Shading attachment. This feature is currently experimental.
+This can yield some fairly significant performance benefits on GPUs that support Tier 2 VRS.
+Lower settings will result in almost no discernible artifacting on most HMDs; higher settings will show some artifacts towards the edges of the view.]`
+- `EGBufferFormat GBufferFormat [Selects which GBuffer format should be used. Affects performance primarily via how much GPU memory bandwidth used. This also controls Substrate normal quality and, in this case, a restart is required.]`
+- `int GPUSimulationTextureSizeX [The X size of the GPU simulation texture size. SizeX*SizeY determines the maximum number of GPU simulated particles in an emitter. Potentially overridden by CVar settings in BaseDeviceProfile.ini.]`
+- `int GPUSimulationTextureSizeY [The Y size of the GPU simulation texture size. SizeX*SizeY determines the maximum number of GPU simulated particles in an emitter. Potentially overridden by CVar settings in BaseDeviceProfile.ini.]`
+- `FVector2D GreenChromaticityCoordinate [Working color space green chromaticity coordinates.]`
+- `ELightFunctionAtlasPixelFormat LightFunctionAtlasPixelFormat [Select the format of the light function atlas texture.]`
+- `bool LumenFrontLayerTranslucencyReflections [Whether to use high quality mirror reflections on the front layer of translucent surfaces.  Other layers will use the lower quality Radiance Cache method that can only produce glossy reflections.  Increases GPU cost when enabled.]`
+- `ELumenRayLightingMode LumenRayLightingMode [Controls how Lumen Reflection rays are lit when Lumen is using Hardware Ray Tracing.  By default, Lumen uses the Surface Cache for best performance, but can be set to 'Hit Lighting' for higher quality.]`
+- `bool LumenRayTracedTranslucentRefractions [Whether to use Lumen refraction tracing from surfaces when using harware ray tracing and hit lighting. This will require shader recompilation to compile of translucent card capture Lumen shaders. Increases GPU cost when enabled.]`
+- `ELumenScreenTracingSource LumenScreenTracingSource [Specifies which Scene Color texture Lumen's Screen Traces should read from.]`
+- `ELumenSoftwareTracingMode LumenSoftwareTracingMode [Controls which tracing method Lumen uses when using Software Ray Tracing.]`
+- `ECompositingSampleCount MSAASampleCount [Default number of samples for MSAA.]`
+- `FPerPlatformInt MaxSkinBones [Max number of bones that can be skinned on the GPU in a single draw call. The default value is set by the Compat.MAX_GPUSKIN_BONES consolevariable. Changing this setting requires restarting the editor.]`
+- `bool MeshPaintDefaultOnStaticMesh [Default setting for whether static mesh assets support mesh paint textures.]`
+- `int MeshPaintDefaultTexelsPerVertex [Default ratio of texels to vertices when creating a mesh paint texture for a mesh.]`
+- `int MeshPaintVirtualTextureMaxTextureSize [Maximum size in pixels for mesh paint virtual textures. Will be rounded to next power-of-2.]`
+- `uint MeshPaintVirtualTextureTileBorderSize [Size in pixels for virtual texture tile borders. Will be rounded next to multiple-of-2. Changing this setting requires restarting the editor.]`
+- `uint MeshPaintVirtualTextureTileSize [Size in pixels for mesh paint virtual texture tiles. Will be rounded to next power-of-2. Changing this setting requires restarting the editor.]`
+- `bool MeshPaintVirtualTextureUseCompression [Whether to use a compressed texture format for storing mesh paint textures.]`
+- `float32 MinScreenRadiusForEarlyZPass [Screen radius at which objects are culled for the early Z pass. Larger values can improve performance but very large values can degrade performance if large occluders are not rendered.]`
+- `float32 MinScreenRadiusForLights [Screen radius at which lights are culled. Larger values can improve performance but causes lights to pop off when they affect a small area of the screen.]`
+- `EMobileAntiAliasingMethod MobileAntiAliasing [The mobile default anti-aliasing method.]`
+- `EMobileFloatPrecisionMode MobileFloatPrecisionMode [Project wide mobile float precision mode for shaders and materials. Changing this setting requires restarting the editor.]`
+- `EMobileLocalLightSetting MobileLocalLightSetting [Select which Local Light Setting to use for Mobile. Changing this setting requires restarting the editor.]`
+- `EMobileShadingPath MobileShadingPath [The shading path to use on mobile platforms. Changing this setting requires restarting the editor. Forward shading will force MSAA. Mobile HDR is required for Deferred Shading.]`
+- `float32 MorphTargetMaxBlendWeight [Blend target weights will be checked against this value for validation. Absolue values greather than this number will be clamped to [-MorphTargetMaxBlendWeight, MorphTargetMaxBlendWeight].]`
+- `FVector2D RedChromaticityCoordinate [Working color space red chromaticity coordinates.]`
+- `int ReflectionCaptureResolution [The cubemap resolution for all reflection capture probes. Must be power of 2. Note that for very high values the memory and performance impact may be severe.]`
+- `bool ReflectionEnvironmentLightmapMixBasedOnRoughness [Whether to reduce lightmap mixing with reflection captures for very smooth surfaces.  This is useful to make sure reflection captures match SSR / planar reflections in brightness.]`
+- `EReflectionMethod Reflections [Reflection Method]`
+- `EShadowMapMethod ShadowMapMethod [Select the primary shadow mapping method. Automatically uses 'Shadow Maps' when Forward Shading is enabled for the project as Virtual Shadow Maps are not supported.]`
+- `float32 SkinCacheSceneMemoryLimitInMB [Maximum amount of memory (in MB) per world/scene allowed for the Compute Skin Cache to generate output vertex data and recompute tangents.]`
+- `ESubstrateClosureConfig SubstrateClosurePerPixelOverride [Select how the maximum number of closures evaluated per pixel is defined for each platform.
+ - Use Platform Closure Count: Use the minimum between the platform's closure count and the project's closure count.
+ - Force Closure Count: Force the project's closure count on platforms supporting Adaptive GBuffer.]`
+- `bool SubstrateDebugAdvancedVisualizationShaders [Enable advanced Substrate material debug visualization shaders. Base pass shaders can output such advanced data. Only available for Editors built for Win64 and running with the DX12 graphic API for now.]`
+- `bool SubstrateEnableLayerSupport [Enable Substrate material layering and UI(Experimental).Note: This support is one way; the legacy layer materials auto-upgrade and can only be reversed manually after assets are re - saved.]`
+- `ESubstrateStorageFormat SubstrateGBufferFormat [Select the GBuffer format used for this project.
+ - Blendable GBuffer is supported on all platforms (=> 1 closure and 20 bytes per pixel maximum). 
+ - Adaptive GBuffer is supported on certains platforms. Unsupported platforms will fallback onto 'Blendable GBuffer' format.
+Changing this setting requires restarting the editor.]`
+- `bool SubstrateOpaqueMaterialRoughRefraction [Enable Substrate opaque material rough refractions effect from top layers over layers below. (Experimental for now since this is not a path validated in production). Requires adaptive GBuffer format and at least 2 closures per pixel.]`
+- `uint SubstrateProjectBytesPerPixel [Define the maximum number of bytes per pixel allocated. Materials requiring memory beyond this limit will be simplified until it fits the requirements. This only applies when Adaptive GBuffer is enabled. On platforms not supporting Adaptive GBuffer, the material will be simplified to a smaller fix limit.]`
+- `uint SubstrateProjectClosuresPerPixel [Define the maximum number of closures evaluated per pixel for this project. Materials with a number of closures beyond this limit will be simplified until it fits the requirements. This only applies when Adaptive GBuffer is enabled. On platforms not supporting Adaptive GBuffer, the material will be simplified into a single closure]`
+- `bool SubstrateTranslucentMaterialRoughRefraction [Enable Substrate translucent material rough refractions effect over background.]`
+- `FVector TranslucentSortAxis [The axis that sorting will occur along when Translucent Sort Policy is set to SortAlongAxis.]`
+- `ETranslucentSortPolicy TranslucentSortPolicy [The sort mode for translucent primitives, affecting how they are ordered and how they change order as the camera moves. Requires that Separate Translucency (under Postprocessing) is true.]`
+- `int UnlimitedBonInfluencesThreshold [When Unlimited Bone Influence is enabled, it still uses a fixed bone inflence buffer until the max bone influence of a mesh exceeds this value]`
+- `EVelocityOutputPass VelocityPass [When to write velocity buffer. Changing this setting requires restarting the editor.]`
+- `EVertexDeformationOutputsVelocity VertexDeformationOutputsVelocity [Enables materials with World Position Offset and/or World Displacement to output velocities during the velocity pass even when the actor has not moved. 
+If the VelocityPass is set to 'Write after base pass' this can incur a performance cost due to additional draw calls. 
+That performance cost is higher if many objects are using World Position Offset. A forest of trees for example.]`
+- `uint VirtualTextureTileBorderSize [Size in pixels for virtual texture tile borders, will be rounded to next multiple-of-2. Larger borders allow higher degree of anisotropic filtering, but uses more disk/cache memory. Changing this setting requires restarting the editor.]`
+- `uint VirtualTextureTileSize [Size in pixels for virtual texture tiles, will be rounded to next power-of-2. Changing this setting requires restarting the editor.]`
+- `FSoftObjectPath VisualizeCalibrationColorMaterialPath [When the VisualizeCalibrationColor show flag is enabled, this path will be used as the post-process material to render. The post-process material's Blendable Location property must be set to "After Tonemapping" for proper calibration display.]`
+- `FSoftObjectPath VisualizeCalibrationCustomMaterialPath [When the VisualizeCalibrationCustom show flag is enabled, this path will be used as the post-process material to render. The post-process material's Blendable Location property must be set to "After Tonemapping" for proper calibration display.]`
+- `FSoftObjectPath VisualizeCalibrationGrayscaleMaterialPath [When the VisualizeCalibrationGrayscale show flag is enabled, this path will be used as the post-process material to render. The post-process material's Blendable Location property must be set to "After Tonemapping" for proper calibration display.]`
+- `FVector2D WhiteChromaticityCoordinate [Working color space white chromaticity coordinates.]`
+- `float32 WireframeCullThreshold [Screen radius at which wireframe objects are culled. Larger values can improve performance when viewing a scene in wireframe.]`
+- `EWorkingColorSpace WorkingColorSpaceChoice [Choose from list of provided working color spaces, or custom to provide user-defined space.]`
+- `bool bAllowStaticLighting [Whether to allow any static lighting to be generated and used, like lightmaps and shadowmaps. Games that only use dynamic lighting should set this to 0 to save some static lighting overhead. Disabling allows Material AO and Material BentNormal to work with Lumen Global Illumination. When StaticLighting is disabled, it also enables certain effects related to first person rendering, such as player shadows on the ground. Changing this setting requires restarting the editor.]`
+- `bool bAlwaysUseDeformerForUnlimitedBoneInfluences [Any mesh LODs using Unlimited Bone Influences will always be rendered with a Mesh Deformer. This reduces the number of shader permutations needed for skeletal mesh materials, saving memory at the cost of performance. Has no effect if either Unlimited Bone Influences or Deformer Graph is disabled.]`
+- `bool bAutomaticallySetMaterialUsageInEditorDefault [Whether new Materials should automatically set usage flags in the Editor.]`
+- `bool bClearCoatEnableSecondNormal [Use a separate normal map for the bottom layer of a clear coat material. This is a higher quality feature that is expensive.]`
+- `bool bClusteredDeferredShadingenableForProject [Whether to support Clustered Deferred Shading for the project. When enabled, more shaders are compiled and the feature can be toggled on/off at runtime using r.UseClusteredDeferredShading.]`
+- `bool bCompositeHeterogeneousVolumesWithTranslucency [Enable compositing with heterogeneous volumes when rendering translucency.]`
+- `bool bCustomDepthTaaJitter [Whether the custom depth pass has the TemporalAA jitter enabled. Disabling this can be useful when the result of the CustomDepth Pass is used after TAA (e.g. after Tonemapping)]`
+- `bool bDBuffer [Whether to accumulate decal properties to a buffer before the base pass.  DBuffer decals correctly affect lightmap and sky lighting, unlike regular deferred decals.  DBuffer enabled forces a full prepass.  Changing this setting requires restarting the editor.]`
+- `bool bDefaultFeatureAmbientOcclusion [Whether the default for AmbientOcclusion is enabled or not (postprocess volume/camera/game setting can still override and enable or disable it independently)]`
+- `bool bDefaultFeatureAmbientOcclusionStaticFraction [Whether the default for AmbientOcclusionStaticFraction is enabled or not (only useful for baked lighting and if AO is on, allows to have SSAO affect baked lighting as well, costs performance, postprocess volume/camera/game setting can still override and enable or disable it independently)]`
+- `bool bDefaultFeatureAutoExposure [Whether the default for AutoExposure is enabled or not (postprocess volume/camera/game setting can still override and enable or disable it independently)]`
+- `bool bDefaultFeatureBloom [Whether the default for Bloom is enabled or not (postprocess volume/camera/game setting can still override and enable or disable it independently)]`
+- `bool bDefaultFeatureLensFlare [Whether the default for LensFlare is enabled or not (postprocess volume/camera/game setting can still override and enable or disable it independently)]`
+- `bool bDefaultFeatureMotionBlur [Whether the default for MotionBlur is enabled or not (postprocess volume/camera/game setting can still override and enable or disable it independently)]`
+- `bool bDefaultParticleCutouts [When enabled, after changing the material on a Required particle module a Particle Cutout texture will be chosen automatically from the Opacity Mask texture if it exists, if not the Opacity Texture will be used if it exists.]`
+- `bool bDeferredLightingUsesLightFunctionAtlas [Enable support for light function on deferred lighting (multi-pass and clustered), when the light function atlas is enabled.]`
+- `bool bDeferredSupportPrimitiveAlphaHoldout [Enable primitive alpha holdout support in multiple deferred renderer passes. If primitive holdout masks are not to be used, keep this setting disabled for increased performance. Requires "Alpha Output" to be enabled.]`
+- `FPerPlatformBool bDiscardSkeletalMeshOptionalLODs [Whether to discard skeletal mesh LODs below minimum LOD levels at cook time.]`
+- `bool bDiscardUnusedQualityLevels [When running in game mode, whether to keep shaders for all quality levels in memory or only those needed for the current quality level.
+Unchecked: Keep all quality levels in memory allowing a runtime quality level change. (default)
+Checked: Discard unused quality levels when loading content for the game, saving some memory.]`
+- `bool bDynamicFoveation [Allows foveation level to adjust dynamically based on GPU utilization.
+Level will range between none at the minimum, and the currently selected foveation level at the maximum.]`
+- `bool bEarlyZPassOnlyMaterialMasking [Whether to compute materials' mask opacity only in early Z pass. Changing this setting requires restarting the editor.]`
+- `bool bEnableAlphaChannelInPostProcessing [Enable r.PostProcessing.PropagateAlpha to enforce alpha in scene color (overriding r.SceneColorFormat if necessary) and propagate it through the renderer's post-processing chain. The legacy "Linear color space only" and "Allow through tonemapper" options now map to True and the engine keeps full alpha precision throughout post-processing. This feature can now be toggled without an engine restart.]`
+- `bool bEnableCSMCaching [Enable caching CSM to reduce draw calls for casting CSM and probably improve performance.]`
+- `bool bEnableHeterogeneousVolumes [Enable rendering with the heterogeneous volumes subsystem.]`
+- `bool bEnableMegaLights [Whether to use MegaLights by default, but this can still be overridden by Post Process Volumes, or disabled per-light. MegaLights uses stochastic sampling to render many shadow casting lights efficiently, with a consistent low GPU cost. When MegaLights is enabled, other direct lighting algorithms like Deferred Shading will no longer be used, and other shadowing methods like Ray Traced Shadows, Distance Field Shadows and Shadow Maps will no longer be used. MegaLights requires Hardware Ray Tracing, and does not support Directional Lights. Experimental feature.]`
+- `bool bEnableNaniteFoliage [Enables experimental features required to support Nanite Foliage.]`
+- `bool bEnablePathTracing [Enables the Path Tracing renderer. This enables additional material permutations. Requires Hardware Ray Tracing to be enabled.]`
+- `bool bEnableRVTBaseColor [Disable material type when not required by a project. This minimizes shader permutation count for materials with Runtime Virtual Texture Output nodes.]`
+- `bool bEnableRVTBaseColorRoughness [Disable material type when not required by a project. This minimizes shader permutation count for materials with Runtime Virtual Texture Output nodes.]`
+- `bool bEnableRVTBaseColorSpecular [Disable family of material types when not required by a project. This minimizes shader permutation count for materials with Runtime Virtual Texture Output nodes.]`
+- `bool bEnableRVTDisplacement [Disable material type when not required by a project. This minimizes shader permutation count for materials with Runtime Virtual Texture Output nodes.]`
+- `bool bEnableRVTMask4 [Disable material type when not required by a project. This minimizes shader permutation count for materials with Runtime Virtual Texture Output nodes.]`
+- `bool bEnableRVTWorldHeight [Disable material type when not required by a project. This minimizes shader permutation count for materials with Runtime Virtual Texture Output nodes.]`
+- `bool bEnableRayTracing [Support Hardware Ray Tracing features.  Requires 'Support Compute Skin Cache' before project is allowed to set this.]`
+- `bool bEnableRayTracingShadows [Controls whether Ray Traced Shadows are used by default. Lights can still override and force Ray Traced shadows on or off. Requires Hardware Ray Tracing to be enabled.]`
+- `bool bEnableRayTracingTextureLOD [Enable automatic texture mip level selection in ray tracing material shaders. Unchecked: highest resolution mip level is used for all texture (default). Checked: texture LOD is approximated based on total ray length, output resolution and texel density at hit point (ray cone method).]`
+- `bool bEnableSubstrate [Enable Substrate materials.]`
+- `bool bEnableVirtualTextureOpacityMask [When virtual textures contribute to opacity mask it can sometimes lead to low resolution shadow edges.]`
+- `bool bExtendDefaultLuminanceRangeInAutoExposureSettings [Whether the default values for AutoExposure should support an extended range of scene luminance. Also changes the exposure settings to be expressed in EV100. Having this setting disabled is deprecated and can only be done manually using r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange.]`
+- `bool bForwardShading [Whether to use forward shading on desktop platforms, requires Shader Model 5 hardware.  Forward shading requires MSAA and has lower default cost, but fewer features supported overall.  Materials have to opt-in to more expensive features like high quality reflections.  Deferred shading does not support MSAA.  Changing this setting requires restarting the editor.]`
+- `bool bGPUSkinLimit2BoneInfluences [Whether to use 2 bone influences instead of the default of 4 for GPU skinning. This does not change skeletal mesh assets but reduces the number of instructions required by the GPU skin vertex shaders. Changing this setting requires restarting the editor.]`
+- `bool bGenerateMeshDistanceFields [Whether to build distance fields of static meshes, needed for Software Ray Tracing in Lumen, and distance field AO, which is used to implement Movable SkyLight shadows, and ray traced distance field shadows on directional lights.  Enabling will increase the build times, memory usage and disk size of static meshes.  Changing this setting requires restarting the editor.]`
+- `bool bGenerateRayTracingProxies [Whether to generate dedicated ray tracing proxies for Nanite meshes by default (instead of using the fallback mesh).
+It's recommended to enable this setting as it guarantees that static meshes have multiple ray tracing LODs to support streaming.]`
+- `bool bGlobalClipPlane [Whether to support the global clip plane needed for planar reflections.  Enabling this increases BasePass triangle cost by ~15% regardless of whether planar reflections are active. Changing this setting requires restarting the editor.]`
+- `bool bGpuCrashDebugging [Enables vendor specific and in-engine GPU crash analysis tools.]`
+- `bool bLocalFogVolumeApplyOnTranslucent [Allow local fog volumes to be combined and rendered over translucent meshes. Only per vertex evaluation is supported as of today. It requires r.SupportLocalFogVolumes to be true]`
+- `bool bMaterialEnergyConservation [Enable Energy Conservation on Material. Please note that when Substrate is enabled, energy conservation is forced to ENABLED.]`
+- `bool bMaterialRoughDiffuse [Enable Rough Diffuse Material. Please note that when Substrate is enabled, energy conservation is forced to ENABLED.]`
+- `bool bMeshPaintVirtualTextureSupport [When enabled, mesh paint virtual textures are supported. Changing this setting requires restarting the editor.]`
+- `bool bMeshStreaming [When enabled mesh LODs will stream in based on what is visible on screen.]`
+- `bool bMobileAllowDistanceFieldShadows [Generate shaders for static primitives render Lightmass-baked distance field shadow maps from stationary directional lights. Changing this setting requires restarting the editor.]`
+- `bool bMobileAllowDitheredLODTransition [Whether to support 'Dithered LOD Transition' material option on mobile platforms. Enabling this may degrade performance as rendering will not benefit from Early-Z optimization.]`
+- `bool bMobileAllowMovableSpotlightShadows [Generate shaders for primitives to receive shadow from movable spotlights. Changing this setting requires restarting the editor.]`
+- `bool bMobileAmbientOcclusion [Mobile Ambient Occlusion. Causion: An extra sampler will be occupied in mobile base pass pixel shader after enable the mobile ambient occlusion. Changing this setting requires restarting the editor.]`
+- `bool bMobileDBuffer [Whether to accumulate decal properties to a buffer before the base pass with mobile rendering. DBuffer enabled forces a full prepass. Changing this setting requires restarting the editor.]`
+- `bool bMobileEnableAlphaChannelInPostProcessing [Enable r.Mobile.PropagateAlpha to enforce alpha in scene color (overriding r.SceneColorFormat if necessary) and propagate it through the mobile renderer's post-processing chain.]`
+- `bool bMobileEnableMovableLightCSMShaderCulling [Primitives lit by a movable directional light will render with the CSM shader only when determined to be within CSM range. Changing this setting requires restarting the editor.]`
+- `bool bMobileEnableStaticAndCSMShadowReceivers [Allow primitives to receive both static and CSM shadows from a stationary light. Disabling will free a mobile texture sampler and reduce shader permutations. Changing this setting requires restarting the editor.]`
+- `bool bMobileForwardEnableClusteredReflections [Whether to enable clustered reflections on mobile forward (including translucency in deferred). Always supported for opaque geometry on mobile deferred. Changing this setting requires restarting the editor.]`
+- `bool bMobileMultiView [Enable single-pass stereoscopic rendering on mobile platforms.]`
+- `bool bMobilePostProcessing [If true, mobile pipelines include a full post-processing pass with tonemapping. Disable this setting for a performance boost and to enable stereoscopic rendering optimizations. Changing this setting requires restarting the editor.]`
+- `bool bMobileScreenSpaceReflections [Support Screen Space Reflections with mobile rendering. Screen Space Reflections on mobile require TAA Changing this setting requires restarting the editor.]`
+- `bool bMobileVirtualTextures [Whether to support virtual textures on mobile. Requires general virtual texturing option enabled as well. Changing this setting requires restarting the editor.]`
+- `bool bMultiView [Enable single-pass stereoscopic rendering through view instancing or draw call instancing.]`
+- `bool bNanite [Whether to enable Nanite rendering.]`
+- `bool bOcclusionCulling [Allows occluded meshes to be culled and not rendered.]`
+- `bool bOrderedIndependentTransparencyEnable [Enable support for Order-Independent-Transparency on translucent surfaces, which remove most of the sorting artifact among translucent surfaces.]`
+- `bool bPrecomputedVisibilityWarning [Displays a warning when no precomputed visibility data is available for the current camera location. This can be helpful if you are making a game that relies on precomputed visibility, e.g. a first person mobile game.]`
+- `bool bRenderUnbuiltPreviewShadowsInGame [Whether to render unbuilt preview shadows in game.  When enabled and lighting is not built, expensive preview shadows will be rendered in game.  When disabled, lighting in game and editor won't match which can appear to be a bug.]`
+- `bool bRoundRobinOcclusion [Enable round-robin scheduling of occlusion queries for VR.]`
+- `bool bSelectiveBasePassOutputs [Enables not exporting to the GBuffer rendertargets that are not relevant. Changing this setting requires restarting the editor.]`
+- `bool bSeparateTranslucency [Allow translucency to be rendered to a separate render targeted and composited after depth of field. Prevents translucency from appearing out of focus.]`
+- `bool bShouldHeterogeneousVolumesCastShadows [Enable heterogeneous volumes to cast shadows onto the environment.]`
+- `bool bSingleLayerWaterUsesLightFunctionAtlas [Enable support for light function on Single Layer Water when the light function atlas is enabled.]`
+- `bool bSkipCompilingGPUSkinVF [Cannot be enabled while the skin cache is turned off.]`
+- `bool bStencilForLODDither [Whether to use stencil for LOD dither fading.  This saves GPU time in the base pass for materials with dither fading enabled, but forces a full prepass. Changing this setting requires restarting the editor.]`
+- `FPerPlatformBool bStreamSkeletalMeshLODs [Whether to stream skeletal mesh LODs by default.]`
+- `bool bSupport16BitBoneIndex [If enabled, a new mesh imported will use 8 bit (if <=256 bones) or 16 bit (if > 256 bones) bone indices for rendering.]`
+- `bool bSupportCloudShadowOnForwardLitTranslucent [Enable cloud shadow on translucent surface not relying on the translucenct lighting volume, e.g. using Forward lighting. This is evaluated per vertex to reduce GPU cost and requires extra samplers/textures to be bound to vertex shaders. This is not implemented on mobile as VolumetricClouds are not available on these platforms.]`
+- `bool bSupportCloudShadowOnSingleLayerWater [Enable cloud shadow on SingleLayerWater. This is evaluated per vertex to reduce GPU cost and requires extra samplers/textures to be bound to vertex shaders. This is not implemented on mobile as VolumetricClouds are not available on these platforms.]`
+- `bool bSupportDepthOnlyIndexBuffers [Support depth-only index buffers, which provide a minor rendering speedup at the expense of using twice the index buffer memory.]`
+- `bool bSupportExpFogMatchesVolumetricFog [When enabled, the height fog scattering/ambient/emissive/phase will match the volumetric fog better.]`
+- `bool bSupportHardwareVariableRateShading [Allows selectively shading certain portions of the image at lower rates, using one pixel shader invocation to shade multiple pixels. Rates are selected per-material, or in screenspace by enabling a shading rate image generator (such as Contrast Adaptive Shading or Stereo Foveation). Changing this setting requires restarting the editor.]`
+- `bool bSupportIESProfileOnTranslucent [Enable IES profile evaluation on translucent materials when using the Forward Shading mode.]`
+- `bool bSupportLocalFogVolumes [Enable local fog volume components rendering support. Disable that setting if local fog volumes are not used in a project for increased performance.]`
+- `bool bSupportLowQualityLightmaps ["Low quality lightmap requires permutations of the lightmap rendering shaders.  Disabling will reduce the number of shader permutations required per material. Note that the mobile renderer requires low quality lightmaps, so disabling this setting is not recommended for mobile titles using static lighting. Changing this setting requires restarting the editor."]`
+- `bool bSupportPointLightWholeSceneShadows [PointLight WholeSceneShadows requires many vertex and geometry shader permutations for cubemap rendering. Disabling will reduce the number of shader permutations required per material. Changing this setting requires restarting the editor."]`
+- `bool bSupportRectLightOnTranslucent [Enable rect light evaluation on translucent materials when using the Forward Shading mode.]`
+- `bool bSupportReversedIndexBuffers [Support reversed index buffers, which provide a minor rendering speedup at the expense of using twice the index buffer memory.]`
+- `bool bSupportShadowedLocalLightOnTranslucent [Enable local light shadow evaluation on translucent materials when using the Forward Shading mode.]`
+- `bool bSupportSkinCacheShaders [Cannot be disabled while Ray Tracing is enabled as it is then required.]`
+- `bool bSupportSkyAtmosphere [The sky atmosphere component requires extra samplers/textures to be bound to apply aerial perspective on transparent surfaces (and all surfaces on mobile via per vertex evaluation).]`
+- `bool bSupportSkyAtmosphereAffectsHeightFog [The sky atmosphere component can light up the height fog but it requires extra samplers/textures to be bound to apply aerial perspective on transparent surfaces (and all surfaces on mobile via per vertex evaluation). It requires r.SupportSkyAtmosphere to be true.]`
+- `bool bSupportStationarySkylight ["Stationary skylight requires permutations of the basepass shaders.  Disabling will reduce the number of shader permutations required per material. Changing this setting requires restarting the editor."
+"For a mobile renderer disabling this option does not reduce shader permutations, but may increse GPU performance. It's recommended to disable it if your project does not requiure Stationary or Movable skylights."]`
+- `bool bSupportTranslucentPerObjectShadow [Enable translucent volumetric self-shadow, requires vertex and pixel shader permutations for all tranlucent materials even if not used by any light.]`
+- `bool bTemporalUpsampling [Whether to do primary screen percentage upscale with Temporal AA pass or not.]`
+- `bool bTextureStreaming [When enabled textures will stream in based on what is visible on screen.]`
+- `bool bTranslucentUsesLightFunctionAtlas [Enable support for light function on Translucent material using Forward Shading mode, when the light function atlas is enabled.]`
+- `bool bUseDXT5NormalMaps [Whether to use DXT5 for normal maps, otherwise BC5 will be used, which is not supported on all hardware. Changing this setting requires restarting the editor.]`
+- `bool bUseGPUMorphTargets [Whether to use original CPU method (loop per morph then by vertex) or use a GPU-based method on Shader Model 5 hardware.]`
+- `bool bUseHairStrandsAutoLODMode [Enable hair strands Auto LOD mode by default. Otherwise use Manual LOD mode. Auto LOD mode adapts hair curves based on screen coverage. Manual LOD mode relies on LODs manually setup per groom asset. This global behavior can be overridden per groom asset]`
+- `bool bUseHardwareRayTracingForLumen [Uses Hardware Ray Tracing for Lumen features, when supported by the video card + RHI + Operating System. Lumen will fall back to Software Ray Tracing otherwise. Note: Hardware ray tracing has significant scene update costs for scenes with more than 100k instances.]`
+- `bool bUseHighQualityRVTHeightSampling [Use higher quality sampling of per pixel heightmaps when rendering to Runtime Virtual Texture.]`
+- `bool bUseLegacyLuminanceFactors [Default luminance factors: 0 enables the working color space coefficients (default), 1 enables inaccurate legacy coefficients.]`
+- `bool bUseNormalMapsForStaticLighting [Whether to allow any static lighting to use normal maps for lighting computations.]`
+- `bool bUseUnlimitedBoneInfluences [If enabled, a new mesh imported will use unlimited bone buffer instead of fixed MaxBoneInfluences for rendering.]`
+- `bool bVertexFoggingForOpaque [Causes opaque materials to use per-vertex fogging, which costs slightly less.  Only supported with forward shading. Changing this setting requires restarting the editor.]`
+- `bool bVirtualTextureAnisotropicFiltering [When enabled, virtual textures will use anisotropic filtering. This adds a cost to all shaders using virtual textures. Changing this setting requires restarting the editor.]`
+- `bool bVirtualTextureEnableAutoImport [Enable virtual texture streaming for imported textures based on the 'Auto Virtual Texturing Size' in the texture import settings.]`
+- `bool bVirtualTexturedLightmaps [When enabled, lightmaps will be streamed using the virtual texture system. Changing this setting requires restarting the editor.]`
+- `bool bVirtualTextures [When enabled, textures can be streamed using the virtual texture system. Changing this setting requires restarting the editor.]`
+- `bool bVolumetricFogUsesLightFunctionAtlas [Enable support for light function on volumetric fog, when the light function atlas is enabled.]`
+
+---
+

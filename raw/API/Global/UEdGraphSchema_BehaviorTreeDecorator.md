@@ -1,0 +1,4 @@
+### UEdGraphSchema_BehaviorTreeDecorator
+
+---
+

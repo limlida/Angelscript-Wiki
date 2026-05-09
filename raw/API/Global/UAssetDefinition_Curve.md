@@ -1,0 +1,4 @@
+### UAssetDefinition_Curve
+
+---
+

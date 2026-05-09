@@ -1,0 +1,6 @@
+### UInterchangeSkeletalMeshFactory
+
+
+UE::Interchange
+---
+

@@ -1,0 +1,4 @@
+### UFoliageType_ActorThumbnailRenderer
+
+---
+
