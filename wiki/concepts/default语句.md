@@ -45,8 +45,8 @@ class AReplicatedActor : AActor
 - `default` 语句主要用于子对象（组件等）和调用设置默认值的函数
 
 ## 来源
-[[演员和组件摘要]]
-[[与 C++ 差异摘要]]
+[[Source_ActorsComponents]]
+[[Source_CPPDifferences]]
 
 ## 相关概念
 - [[热重载]] - default 语句比构造函数更适合热重载

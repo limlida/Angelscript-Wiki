@@ -38,7 +38,7 @@ mixin void SetVectorToZero(FVector& Vector)
 
 ### C++ Mixin 库
 - 可通过 C++ 的 `ScriptMixin` 元数据创建 Mixin 库
-- 详见 [[脚本 Mixin 库摘要]]
+- 详见 [[Source_ScriptMixinLibraries]]
 
 ## 相关概念
 - [[Mixin模式]]

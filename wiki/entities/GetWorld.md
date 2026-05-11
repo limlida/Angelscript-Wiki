@@ -22,4 +22,4 @@ UWorld CurrentWorld = GetWorld();
 - 可用于访问世界级别的功能，如生成 Actor、获取 GameMode 等
 
 ## 来源
-[[脚本入门介绍摘要]]
+[[Source_ScriptingIntroduction]]

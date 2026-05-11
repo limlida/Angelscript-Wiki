@@ -1,11 +1,16 @@
-﻿﻿---
-title: "[[UScene]]Component"
+﻿---
+title: "USceneComponent"
 category: entities
 date: 2026-05-08
 tags:
   - Component
   - Scene
   - Transform
+trust: unverified
+verified_at: 2026-05-11
+verified_against: []
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述
@@ -91,32 +96,32 @@ A SceneComponent has a transform and supports attachment, but has no rendering o
 ### 附加和分离
 
 #### 附加方法
-- `bool AttachTo([[UScene]]Component InParent, [[FName]] InSocketName = NAME_None, EAttachLocation AttachType = EAttachLocation::KeepRelativeOffset, bool bWeldSimulatedBodies = true)`
-- `bool AttachToComponent([[UScene]]Component Parent, [[FName]] SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies)` - Attach this component to another scene component
+- `bool AttachTo(USceneComponent InParent, [[FName]] InSocketName = NAME_None, EAttachLocation AttachType = EAttachLocation::KeepRelativeOffset, bool bWeldSimulatedBodies = true)`
+- `bool AttachToComponent(USceneComponent Parent, [[FName]] SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies)` - Attach this component to another scene component
 
 #### 分离方法
 - `DetachFromParent(bool bMaintainWorldPosition = false, bool bCallModify = true)`
 - `DetachFromComponent(EDetachmentRule LocationRule = EDetachmentRule::KeepRelative, EDetachmentRule RotationRule = EDetachmentRule::KeepRelative, EDetachmentRule ScaleRule = EDetachmentRule::KeepRelative, bool bCallModify = true)`
 
 #### 附加查询
-- `[[UScene]]Component GetAttachParent() const` - Get the SceneComponent we are attached to
+- `USceneComponent GetAttachParent() const` - Get the SceneComponent we are attached to
 - `[[FName]] GetAttachSocketName() const` - Get the socket we are attached to
-- `bool IsAttachedTo(const [[UScene]]Component CheckComponent) const`
+- `bool IsAttachedTo(const USceneComponent CheckComponent) const`
 - `bool IsAttachedTo(const [[AActor]] CheckActor) const`
 
 ### 子组件管理
 
 #### 获取子组件
-- `[[UScene]]Component GetChildComponent(int ChildIndex) const` - Gets the attached child component at the specified location
-- `GetChildrenComponents(bool bIncludeAllDescendants, [[TArray]]<[[UScene]]Component>& Children) const` - Gets all components that are attached to this component
-- `[[UScene]]Component GetChildComponentByClass([[TSubclassOf]]<[[UScene]]Component> ComponentClass) const`
-- `[[TArray]]<[[UScene]]Component> GetChildrenComponentsByClass([[TSubclassOf]]<[[UActorComponent]]> ComponentClass, bool bIncludeAllDescendants) const`
+- `USceneComponent GetChildComponent(int ChildIndex) const` - Gets the attached child component at the specified location
+- `GetChildrenComponents(bool bIncludeAllDescendants, [[TArray]]<USceneComponent>& Children) const` - Gets all components that are attached to this component
+- `USceneComponent GetChildComponentByClass([[TSubclassOf]]<USceneComponent> ComponentClass) const`
+- `[[TArray]]<USceneComponent> GetChildrenComponentsByClass([[TSubclassOf]]<[[UActorComponent]]> ComponentClass, bool bIncludeAllDescendants) const`
 
 #### 子组件数量
 - `int GetNumChildrenComponents() const` - Gets the number of attached children components
 
 #### 父组件
-- `GetParentComponents([[TArray]]<[[UScene]]Component>& Parents) const` - Gets all attachment parent components up to and including the root component
+- `GetParentComponents([[TArray]]<USceneComponent>& Parents) const` - Gets all attachment parent components up to and including the root component
 
 ### Socket相关方法
 

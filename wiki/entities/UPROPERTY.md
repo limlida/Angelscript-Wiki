@@ -81,6 +81,6 @@ void OnRep_Health()
 - 子对象默认值使用 `default` 语句设置
 
 ## 来源
-[[属性和访问器摘要]]
-[[演员和组件摘要]]
-[[网络功能摘要]]
+[[Source_PropertiesAndAccessors]]
+[[Source_ActorsComponents]]
+[[Source_NetworkingFeatures]]

@@ -42,4 +42,4 @@ class AExampleSpawner : [[AActor]]
 - `SpawnActor()` 可以接受 `TSubclassOf<>` 作为参数
 
 ## 来源
-[[演员和组件摘要]]
+[[Source_ActorsComponents]]

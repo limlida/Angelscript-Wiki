@@ -7,6 +7,15 @@ tags:
   - GAS
   - Montage
   - AbilityTask
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UAbilityTask_PlayMontageAndWait.md
+  - raw/API/Structs/FMontageWaitSimpleDelegate.md
+verified_by: agent
+unverified_items:
+  - CreatePlayMontageAndWaitProxy
+  - ReadyForActivation
 ---
 
 ## 概述
@@ -32,7 +41,7 @@ tags:
 
 ## 创建方式
 
-[TODO: verify] 在 C++ 中通过 `CreatePlayMontageAndWaitProxy(...)` 静态工厂方法创建，但 **Angelscript raw API 中未暴露此工厂方法**。`UAbilityTask` 基类的 API 也为空（无 `ReadyForActivation` 等方法）。
+[TODO: verify | reason: Angelscript raw API 中未找到 `CreatePlayMontageAndWaitProxy` 工厂方法，且 `UAbilityTask` 基类未暴露 `ReadyForActivation` 等激活方法 | added: 2026-05-11] 在 C++ 中通过 `CreatePlayMontageAndWaitProxy(...)` 静态工厂方法创建，但 **Angelscript raw API 中未暴露此工厂方法**。`UAbilityTask` 基类的 API 也为空（无 `ReadyForActivation` 等方法）。
 
 在 Angelscript 中使用此任务的可行性需要在实际项目中验证。如果不可用，推荐使用手动方式：通过 [[UAnimInstance]] 的 `Montage_Play()` + [[FOnMontageEndedMCDelegate]] 实现同等功能。
 

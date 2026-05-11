@@ -37,4 +37,4 @@ class AExampleSpawner : AActor
 ```
 
 ## 来源
-[[演员和组件摘要]]
+[[Source_ActorsComponents]]

@@ -37,16 +37,16 @@
 ## [2026-05-08] ingest | 创建来源摘要
 - 任务：为 raw/ 中的核心文档创建摘要页面
 - 新增/更新页面（wiki/sources/）：
-  - [[UnrealEngine-Angelscript 官方主页摘要]]
-  - [[安装指南摘要]]
-  - [[脚本入门介绍摘要]]
-  - [[函数和 Blueprint 事件摘要]]
-  - [[属性和访问器摘要]]
-  - [[演员和组件摘要]]
-  - [[函数库摘要]]
-  - [[委托和事件摘要]]
-  - [[网络功能摘要]]
-  - [[与 C++ 差异摘要]]
+  - [[Source_Home]]
+  - [[Source_Installation]]
+  - [[Source_ScriptingIntroduction]]
+  - [[Source_FunctionsAndEvents]]
+  - [[Source_PropertiesAndAccessors]]
+  - [[Source_ActorsComponents]]
+  - [[Source_FunctionLibraries]]
+  - [[Source_Delegates]]
+  - [[Source_NetworkingFeatures]]
+  - [[Source_CPPDifferences]]
 
 ---
 
@@ -82,8 +82,8 @@
 ## [2026-05-08] ingest | 解析补充文档（API和语法糖）
 - 任务：发现并解析 raw/ 下的补充重要文档
 - 新增/更新页面（wiki/sources/）：
-  - [[Angelscript 全量 API 文档摘要]]
-  - [[语法糖详细文档摘要]]
+  - [[Source_AngelscriptAPI]]
+  - [[Source_SyntaxSugar]]
 - 新增/更新页面（wiki/concepts/）：
   - [[FName 字面量语法糖]]
   - [[格式化字符串 (f-strings)]]（更新并扩展）
@@ -227,20 +227,20 @@
 基于 `raw/` 下所有原始资料，重新构建知识库，补全所有缺失的来源摘要和概念页面。
 
 ### 新增来源摘要（wiki/sources/）
-- [[FName 字面量摘要]] - `n""` 编译时 FName 优化
-- [[格式化字符串摘要]] - f-string 格式化字符串
-- [[GameplayTag 摘要]] - GameplayTag 命名空间自动绑定
-- [[Mixin 方法摘要]] - `mixin` 关键字扩展方法
-- [[编辑器脚本摘要]] - `#if EDITOR` 和编辑器专用目录
-- [[子系统摘要]] - 子系统使用和创建
-- [[脚本测试摘要]] - 单元测试和集成测试框架
-- [[脚本 Mixin 库摘要]] - C++ ScriptMixin 库
-- [[预编译脚本摘要]] - 预编译缓存和 C++ 转译
-- [[自动绑定摘要]] - C++ 反射自动绑定规则
-- [[结构体与引用摘要]] - 值类型、引用传递和 `&out`
-- [[开发状态摘要]] - 平台支持和已知限制
-- [[资源与链接摘要]] - 社区、工具和使用 UE-AS 的游戏
-- [[许可证摘要]] - MIT + zlib 许可证
+- [[Source_FNameLiterals]] - `n""` 编译时 FName 优化
+- [[Source_FormatStrings]] - f-string 格式化字符串
+- [[Source_GameplayTags]] - GameplayTag 命名空间自动绑定
+- [[Source_MixinMethods]] - `mixin` 关键字扩展方法
+- [[Source_EditorScript]] - `#if EDITOR` 和编辑器专用目录
+- [[Source_Subsystems]] - 子系统使用和创建
+- [[Source_ScriptTests]] - 单元测试和集成测试框架
+- [[Source_ScriptMixinLibraries]] - C++ ScriptMixin 库
+- [[Source_PrecompiledData]] - 预编译缓存和 C++ 转译
+- [[Source_AutomaticBindings]] - C++ 反射自动绑定规则
+- [[Source_StructsRefs]] - 值类型、引用传递和 `&out`
+- [[Source_DevelopmentStatus]] - 平台支持和已知限制
+- [[Source_Resources]] - 社区、工具和使用 UE-AS 的游戏
+- [[Source_License]] - MIT + zlib 许可证
 
 ### 新增概念页面（wiki/concepts/）
 - [[编辑器脚本]] - 编辑器专用代码和预处理器
@@ -785,3 +785,57 @@
 ### 更新文件
 - `AGENTS.md` — 修订 3.1、4.1、4.2、4.3,重构 4.4 → 4.5,原 4.5 → 4.6,新增 4.4 Trust 系统、4.7 Trust 升降级,扩充 5.2
 - `log.md` — 记录本次 schema 修订（本条目）
+
+---
+
+## [2026-05-11] fix | AGENTS.md 执行约束与存量标记修复
+
+### 背景
+复查 wiki 构建流程时发现：无 `trust` 字段的存量页面被默认视同 partial，导致具体接口可能被过度信任；普通 query 强制写日志会制造噪音；自动链接曾污染 frontmatter 和函数签名；旧式 `[TODO: verify]` 仍未迁移。
+
+### 修正动作
+- `AGENTS.md` 新增 **0. 硬性执行协议**：任务触发矩阵、回答前检查清单、禁止事项。
+- `AGENTS.md` 收紧无 trust 页面规则：只能作为背景，引用具体方法/属性/参数/返回值前必须回查 `raw/API/{Global,Structs}/<TypeName>.md`。
+- `AGENTS.md` 调整 Query 日志规则：普通一次性问答不写日志；只有 wiki 修改、trust/TODO 变更、归档或用户要求时记录。
+- `AGENTS.md` 明确禁止在 frontmatter、代码块、inline code、函数签名和类型名片段中自动插入 Wiki 链接。
+- `wiki/entities/UAbilityTask_PlayMontageAndWait.md` 补齐 trust frontmatter，并把旧式 TODO 升级为标准格式。
+- `wiki/syntheses/GA_Montage_PlayAndEnd.md` 补齐 trust frontmatter，并把旧式 TODO 升级为标准格式。
+- `wiki/entities/USceneComponent.md` 修复 `[[UScene]]Component` 自动链接污染，并标记为 `trust: unverified`，等待后续 promote。
+
+### Trust / TODO 影响
+- [[UAbilityTask_PlayMontageAndWait]]：新增 `trust: partial`；未验证项 `CreatePlayMontageAndWaitProxy`, `ReadyForActivation`
+- [[GA_Montage_PlayAndEnd]]：新增 `trust: partial`；未验证项 `CreatePlayMontageAndWaitProxy`, `ReadyForActivation`, `ASC.PlayMontage`
+- [[USceneComponent]]：新增 `trust: unverified`
+
+---
+
+## [2026-05-11] fix | index 链接统一为实际页面名称
+
+### 背景
+`index.md` 中部分来源摘要与综合页面使用了展示标题作为 Wiki 链接，不利于按文件名稳定跳转和批量校验。
+
+### 修正动作
+- 将 `快速开始` 与 `来源摘要` 分区中的来源页面链接统一替换为实际文件名（`Source_*`）。
+- 将综合页面链接从 `[[GA播放蒙太奇动画并在结束时终止能力]]` 统一为 `[[GA_Montage_PlayAndEnd]]`。
+
+### 更新文件
+- `index.md` — 来源摘要与综合页链接改为实际页面名称
+- `log.md` — 记录本次修复（本条目）
+
+---
+
+## [2026-05-11] fix | 全库摘要链接统一为实际页面名称
+
+### 背景
+检索发现多个实体页、概念页和历史日志仍在使用 `[[...摘要]]` 形式的展示标题链接，与“按实际页面名称（文件名）链接”的规则不一致，容易导致跨页跳转歧义。
+
+### 修正动作
+- 全库扫描并替换所有 `[[...摘要]]` 旧链接为对应的 `[[Source_*]]` 页面名链接。
+- 覆盖 `wiki/entities/`、`wiki/concepts/`、`wiki/sources/` 与 `log.md` 中的历史引用。
+- 复扫确认：仓库中不再存在 `[[...摘要]]` 形式链接。
+
+### 更新文件
+- `wiki/entities/` 多个实体页 — 来源链接统一为 `[[Source_*]]`
+- `wiki/concepts/` 多个概念页 — 来源链接统一为 `[[Source_*]]`
+- `wiki/sources/Source_MixinMethods.md` — 相关摘要引用改为实际页面名
+- `log.md` — 历史记录中的摘要链接统一为实际页面名

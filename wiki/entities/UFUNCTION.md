@@ -73,4 +73,4 @@ void ServerDoSomething()
 - 重写 C++ 的 `BlueprintNativeEvent` 时，无法调用 C++ 的 Super 实现
 
 ## 来源
-[[函数和 Blueprint 事件摘要]]
+[[Source_FunctionsAndEvents]]

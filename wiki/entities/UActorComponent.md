@@ -52,4 +52,4 @@ Actor.GetComponentsByClass(StaticMeshComponents);
 - [[自动绑定]] - 组件的自动绑定规则
 
 ## 来源
-[[演员和组件摘要]]
+[[Source_ActorsComponents]]

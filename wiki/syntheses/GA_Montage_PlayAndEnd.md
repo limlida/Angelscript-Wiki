@@ -7,6 +7,19 @@ tags:
   - Ability
   - Montage
   - 实践指南
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UGameplayAbility.md
+  - raw/API/Global/UAnimInstance.md
+  - raw/API/Global/UAbilityTask_PlayMontageAndWait.md
+  - raw/API/Structs/FOnMontageEndedMCDelegate.md
+  - raw/API/Structs/FMontageWaitSimpleDelegate.md
+verified_by: agent
+unverified_items:
+  - CreatePlayMontageAndWaitProxy
+  - ReadyForActivation
+  - ASC.PlayMontage
 ---
 
 ## 概述
@@ -247,7 +260,7 @@ class UMyMontageAbility : UTkGameplayAbility
             return;
         }
         
-        // [TODO: verify] ASC.PlayMontage 在 raw API 中未找到，可能是项目自定义扩展
+        // [TODO: verify | reason: `ASC.PlayMontage` 在 UAbilitySystemComponent raw API 中未找到，可能是项目自定义扩展 | added: 2026-05-11]
         UAbilitySystemComponent ASC = GetAbilitySystemComponentFromActorInfo();
         if (ASC != nullptr && MontageToPlay != nullptr)
         {

@@ -33,5 +33,5 @@ Print(f"{DeltaSeconds = :.2f}"); // 输出: "DeltaSeconds = 0.02"
 - 消息同时显示在屏幕和日志文件中
 
 ## 来源
-[[脚本入门介绍摘要]]
-[[格式化字符串摘要]]
+[[Source_ScriptingIntroduction]]
+[[Source_FormatStrings]]

@@ -44,11 +44,11 @@ Vec.Reset();
 
 ## 在 C++ 中添加 Mixin 库
 也可以在 C++ 中为脚本创建 Mixin 库，详情见：
-- [[脚本 Mixin 库摘要]]
+- [[Source_ScriptMixinLibraries]]
 
 ## 来源
-[[Mixin 方法摘要]]
-[[脚本 Mixin 库摘要]]
+[[Source_MixinMethods]]
+[[Source_ScriptMixinLibraries]]
 
 ## 相关概念
 - [[FName字面量]] - Mixin 绑定函数时使用 `n""` 语法

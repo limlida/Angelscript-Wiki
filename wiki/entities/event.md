@@ -66,7 +66,7 @@ class AEventExample : AActor
 - 添加的函数必须声明为 `UFUNCTION()`
 
 ## 相关概念
-- [[委托和事件摘要]]
+- [[Source_Delegates]]
 
 ## 来源
-[[委托和事件摘要]]
+[[Source_Delegates]]

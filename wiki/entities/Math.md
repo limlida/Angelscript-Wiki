@@ -39,4 +39,4 @@ float CosVal = Math::Cos(Angle);
 ```
 
 ## 来源
-[[函数库摘要]]
+[[Source_FunctionLibraries]]

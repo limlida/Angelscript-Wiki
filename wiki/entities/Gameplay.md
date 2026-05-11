@@ -38,4 +38,4 @@ Gameplay::ApplyDamage(TargetActor, DamageAmount, InstigatorController, DamageCau
 ```
 
 ## 来源
-[[函数库摘要]]
+[[Source_FunctionLibraries]]

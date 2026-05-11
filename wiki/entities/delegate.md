@@ -52,7 +52,7 @@ class ADelegateExample : AActor
 - 也可通过构造函数语法创建：`FExampleDelegate(this, n"FuncName")`
 
 ## 相关概念
-- [[委托和事件摘要]]
+- [[Source_Delegates]]
 
 ## 来源
-[[委托和事件摘要]]
+[[Source_Delegates]]

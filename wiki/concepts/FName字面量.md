@@ -77,7 +77,7 @@ class AMyActor : AActor
 - 建议使用 PascalCase 或 Snake_Case 格式
 
 ## 来源
-[[FName 字面量摘要]]、[[语法糖详细文档摘要]]
+[[Source_FNameLiterals]]、[[Source_SyntaxSugar]]
 
 ## 相关概念
 - [[Mixin模式]] - Mixin 方法中常用 `n""` 绑定函数名

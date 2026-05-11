@@ -20,4 +20,4 @@ UNiagaraComponent Comp = Niagara::SpawnSystemAtLocation(SystemAsset, Location);
 ```
 
 ## 来源
-[[函数库摘要]]
+[[Source_FunctionLibraries]]

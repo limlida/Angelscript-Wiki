@@ -79,7 +79,7 @@ if (AbilitySystemComponent.HasMatchingTag(GameplayTags::Input_Action_Jump))
 - 避免运行时错误
 
 ## 来源
-[[GameplayTag 摘要]]、[[语法糖详细文档摘要]]
+[[Source_GameplayTags]]、[[Source_SyntaxSugar]]
 
 ## 相关概念
 - [[自动绑定]] - GameplayTag 的自动命名空间绑定是自动绑定机制的一部分

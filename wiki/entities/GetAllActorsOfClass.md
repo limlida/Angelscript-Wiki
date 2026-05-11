@@ -23,4 +23,4 @@ GetAllActorsOfClass(NiagaraActors);
 - **推荐做法**：运行一次并存储结果，而非每帧调用
 
 ## 来源
-[[演员和组件摘要]]
+[[Source_ActorsComponents]]
