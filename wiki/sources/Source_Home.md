@@ -6,6 +6,13 @@ source_count: 1
 tags:
   - 官方
   - 入门
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/home.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

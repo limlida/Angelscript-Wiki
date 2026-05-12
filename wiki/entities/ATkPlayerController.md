@@ -6,6 +6,13 @@ tags:
   - Actor
   - 游戏特定
   - PlayerController
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/ATkPlayerController.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

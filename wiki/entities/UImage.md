@@ -6,6 +6,14 @@ tags:
   - UI
   - Widget
   - UMG
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UImage.md
+verified_by: agent
+unverified_items:
+  - GetDynamicMaterialSetBrush SetBrushFromAsset SetBrushFromTexture SetBrushFromSoftTexture SetBrushFromMaterial SetBrushFromSoftMaterial SetBrushFromTextureDynamic SetBrushResourceObject SetColorAndOpacity SetOpacity SetBrushTintColor SetDesiredSizeOverride
 ---
 
 ## 概述

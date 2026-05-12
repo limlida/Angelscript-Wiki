@@ -1,10 +1,17 @@
-﻿﻿---
+---
 title: "FRotator"
 category: entities
 date: 2026-05-08
 tags:
   - Struct
   - 旋转
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Structs/FRotator.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

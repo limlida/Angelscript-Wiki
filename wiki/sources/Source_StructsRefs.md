@@ -7,6 +7,13 @@ tags:
   - 结构体
   - 引用
   - 值类型
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/structs-refs.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

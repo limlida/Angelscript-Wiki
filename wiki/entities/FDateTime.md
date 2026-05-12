@@ -6,6 +6,13 @@ tags:
   - Struct
   - 时间
   - 基础类型
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Structs/FDateTime.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

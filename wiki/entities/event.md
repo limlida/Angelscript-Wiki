@@ -6,6 +6,12 @@ tags:
   - 事件
   - 多播
   - 委托
+
+trust: unverified
+verified_at: 2026-05-11
+verified_against: []
+verified_by: agent
+unverified_items: []
 ---
 
 ## 定义

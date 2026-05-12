@@ -5,6 +5,13 @@ date: 2026-05-09
 tags:
   - 音频
   - 声音
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/USoundBase.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

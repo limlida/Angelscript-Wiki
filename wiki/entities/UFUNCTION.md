@@ -1,4 +1,4 @@
-﻿---
+---
 title: "UFUNCTION 宏"
 category: entities
 date: 2026-05-08
@@ -6,6 +6,13 @@ tags:
   - 函数
   - Blueprint
   - 宏
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UFUNCTION.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 定义

@@ -7,6 +7,13 @@ tags:
   - 资源
   - 社区
   - 链接
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/resources.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

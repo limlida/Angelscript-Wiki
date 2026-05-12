@@ -1,10 +1,17 @@
-﻿﻿---
+---
 title: "AActor"
 category: entities
 date: 2026-05-08
 tags:
   - Actor
   - 基类
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/AActor.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

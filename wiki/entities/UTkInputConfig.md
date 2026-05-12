@@ -6,6 +6,13 @@ tags:
   - DataAsset
   - 游戏特定
   - 输入
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UTkInputConfig.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

@@ -6,6 +6,28 @@ tags:
   - Component
   - GAS
   - 能力系统
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UAbilitySystemComponent.md
+verified_by: agent
+unverified_items:
+  - CancelAbility
+  - CancelAllAbilities
+  - ClearAllEffects
+  - FindAbilitySpecAndActivateAbility
+  - GetNumericAttribute
+  - HasAbility
+  - HasAllMatchingGameplayTags
+  - HasAnyMatchingGameplayTags
+  - HasMatchingGameplayTag
+  - HasTag
+  - HasTagExact
+  - IsAbilityActive
+  - RemoveActiveEffects
+  - SetNumericAttribute
+  - UpdateTagMap
 ---
 
 ## 概述

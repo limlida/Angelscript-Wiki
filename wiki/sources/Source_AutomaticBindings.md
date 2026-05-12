@@ -7,6 +7,13 @@ tags:
   - 自动绑定
   - C++ 绑定
   - 反射
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/automatic-bindings.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

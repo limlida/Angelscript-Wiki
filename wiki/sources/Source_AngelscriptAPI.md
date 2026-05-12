@@ -7,6 +7,13 @@ tags:
   - API
   - 参考
   - 结构体
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/api-reference.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

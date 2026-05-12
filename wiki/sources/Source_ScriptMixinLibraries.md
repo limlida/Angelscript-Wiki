@@ -7,6 +7,13 @@ tags:
   - Mixin
   - C++ 绑定
   - ScriptMixin
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/script-mixin-libraries.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

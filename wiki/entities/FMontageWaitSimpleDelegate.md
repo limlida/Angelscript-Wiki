@@ -7,6 +7,14 @@ tags:
   - GAS
   - Montage
   - 委托
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Structs/FMontageWaitSimpleDelegate.md
+verified_by: agent
+unverified_items:
+  - IsBoundAddUFunction Unbind UnbindObject Clear Broadcast
 ---
 
 ## 概述

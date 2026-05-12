@@ -5,6 +5,13 @@ date: 2026-05-09
 tags:
   - 游戏框架
   - GameInstance
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UGameInstance.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

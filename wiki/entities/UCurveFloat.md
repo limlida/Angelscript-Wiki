@@ -6,6 +6,13 @@ tags:
   - 曲线
   - 动画
   - 插值
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UCurveFloat.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

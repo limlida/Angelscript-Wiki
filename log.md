@@ -839,3 +839,54 @@
 - `wiki/concepts/` 多个概念页 — 来源链接统一为 `[[Source_*]]`
 - `wiki/sources/Source_MixinMethods.md` — 相关摘要引用改为实际页面名
 - `log.md` — 历史记录中的摘要链接统一为实际页面名
+
+---
+
+## [2026-05-11] lint | 全库 Trust Frontmatter 补齐与批量验证
+
+### 背景
+全库 168 个 wiki 页面中仅 3 个有 `trust` frontmatter，150 个完全缺失。按 AGENTS.md 0.2 规则，无 trust 页面只能作背景阅读，引用具体接口前必须回查 raw。本次 lint 执行 M1（补齐 trust）+ 批量验证。
+
+### 修正动作
+
+#### M1: 批量补齐 trust frontmatter
+- 为 165 个缺失 trust 的页面补齐 `trust: unverified` + `verified_at: null` + `verified_against: []` + `verified_by: agent` + `unverified_items: []`
+- 修复格式问题：`unverified_items: []---` → `unverified_items: []\n---`
+
+#### M2: 修正 USceneComponent.md frontmatter 矛盾
+- 旧值：`trust: unverified` + `verified_at: 2026-05-11` + `verified_against: []`（矛盾：有验证日期但无 raw 来源）
+- 新值：`trust: verified` + `verified_at: 2026-05-11` + `verified_against: raw/API/Global/USceneComponent.md`（经验证 67 个方法/属性全部在 raw 中找到）
+
+#### 批量验证：Entities（128 页）
+- 自动比对 wiki 页面方法/属性名与 `raw/API/{Global,Structs}/<TypeName>.md`
+- 结果：🟢 verified 65 页 | 🟡 partial 52 页 | 🔴 unverified 11 页
+
+#### 批量验证：Sources（26 页）
+- 映射每个 Source 页面到对应的 raw 文档文件
+- 结果：🟡 partial 26 页（来源摘要默认 partial）
+
+#### 批量验证：Concepts（13 页）
+- 映射每个 Concept 页面到对应的 raw 文档来源
+- 结果：🟡 partial 13 页（概念页面默认 partial）
+
+### 验证后 Trust 分布
+
+| 等级 | 数量 | 说明 |
+|------|------|------|
+| 🟢 verified | 65 | 所有方法/属性名均在 raw API 中找到 |
+| 🟡 partial | 92 | 部分方法未在 raw 中找到，或为来源摘要/概念页面 |
+| 🔴 unverified | 11 | 无对应 raw API 文件（函数库命名空间、关键字等） |
+
+### Unverified 页面清单（11 个，无 raw API 文件）
+`delegate`, `event`, `Gameplay`, `GetAllActorsOfClass`, `GetWorld`, `Math`, `Niagara`, `Print`, `SpawnActor`, `System`, `Widget`
+
+### Partial 页面中的典型 unverified_items
+- [[UAbilitySystemComponent]]: CancelAbility, CancelAllAbilities, ClearAllEffects, HasAbility 等
+- [[UCharacterMovementComponent]]: AddInputVector, ConsumeInputVector, DoJump, GetMaxSpeed 等
+- [[USkeletalMeshComponent]]: DoesSocketExist, GetAllSocketNames, GetBoneIndex 等
+- [[ACharacter]]: CheckJumpInput, GetCapsuleComponent, GetCharacterMovement, GetMesh, Landed
+
+### 未处理项（留待后续 lint）
+- index.md 中 8 个重复条目（M3）
+- 13 个 entity 文件缺少 `title:` 字段（M4）
+- 2 条 `[TODO: verify]` 标记（均为今日新增，未超 30 天阈值）

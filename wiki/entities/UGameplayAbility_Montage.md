@@ -7,6 +7,13 @@ tags:
   - GAS
   - Montage
   - 能力系统
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UGameplayAbility_Montage.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

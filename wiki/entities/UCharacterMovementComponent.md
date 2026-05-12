@@ -6,6 +6,28 @@ tags:
   - Component
   - 移动
   - Character
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UCharacterMovementComponent.md
+verified_by: agent
+unverified_items:
+  - AddInputVector
+  - ConsumeInputVector
+  - DoJump
+  - GetMaxSpeed
+  - GetPendingInputVector
+  - GetVelocity
+  - HasRootMotionSource
+  - IsCrouching
+  - IsFalling
+  - IsFlying
+  - IsMovingOnGround
+  - IsSwimming
+  - K2_GetMaxSpeedModifier
+  - MoveDirection
+  - SetDefaultMovementMode
 ---
 
 ## 概述

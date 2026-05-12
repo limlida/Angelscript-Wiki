@@ -1,4 +1,4 @@
-﻿﻿---
+---
 title: "APlayerController"
 category: entities
 date: 2026-05-08
@@ -6,6 +6,13 @@ tags:
   - Actor
   - Controller
   - Player
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/APlayerController.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

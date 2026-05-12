@@ -7,6 +7,14 @@ tags:
   - 移动
   - Mover
   - 游戏特定
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UMoverComponent.md
+verified_by: agent
+unverified_items:
+  - GetMovementMode
 ---
 
 ## 概述

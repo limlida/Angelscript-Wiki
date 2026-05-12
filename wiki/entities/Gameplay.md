@@ -6,6 +6,12 @@ tags:
   - 函数库
   - 游戏逻辑
   - 命名空间
+
+trust: unverified
+verified_at: 2026-05-11
+verified_against: []
+verified_by: agent
+unverified_items: []
 ---
 
 ## 定义

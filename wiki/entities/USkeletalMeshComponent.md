@@ -7,6 +7,26 @@ tags:
   - 渲染
   - 骨骼网格
   - 动画
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/USkeletalMeshComponent.md
+verified_by: agent
+unverified_items:
+  - DoesSocketExist
+  - GetAllSocketNames
+  - GetBoneIndex
+  - GetBoneLocation
+  - GetBoneName
+  - GetBoneTransform
+  - GetNumBones
+  - GetPostProcessAnimInstance
+  - GetSocketLocation
+  - GetSocketRotation
+  - GetSocketTransform
+  - IsPlayingNetworkedAnimation
+  - SetSkeletalMesh
 ---
 
 ## 概述

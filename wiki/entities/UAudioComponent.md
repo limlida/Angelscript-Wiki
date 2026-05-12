@@ -5,6 +5,13 @@ date: 2026-05-09
 tags:
   - Component
   - 音频
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UAudioComponent.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

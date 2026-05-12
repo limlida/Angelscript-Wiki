@@ -6,6 +6,13 @@ tags:
   - GAS
   - 能力系统
   - 属性
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UAttributeSet.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

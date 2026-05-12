@@ -8,6 +8,13 @@ tags:
   - 单元测试
   - 集成测试
   - 代码覆盖率
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/script-tests.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

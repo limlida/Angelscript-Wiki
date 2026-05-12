@@ -7,6 +7,13 @@ tags:
   - Widget
   - UMG
   - 下拉框
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UComboBoxString.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

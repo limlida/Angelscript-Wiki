@@ -5,6 +5,13 @@ date: 2026-05-09
 tags:
   - 动画
   - AnimInstance
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UAnimInstance.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

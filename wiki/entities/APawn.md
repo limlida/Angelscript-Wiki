@@ -1,10 +1,17 @@
-﻿﻿---
+---
 title: "APawn"
 category: entities
 date: 2026-05-08
 tags:
   - 基类
   - Pawn
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/APawn.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

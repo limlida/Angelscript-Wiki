@@ -1,10 +1,17 @@
-﻿﻿---
+---
 title: "FTransform"
 category: entities
 date: 2026-05-08
 tags:
   - Struct
   - 变换
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Structs/FTransform.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

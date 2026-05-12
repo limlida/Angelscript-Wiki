@@ -6,6 +6,26 @@ tags:
   - Component
   - 渲染
   - 网格体
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UMeshComponent.md
+verified_by: agent
+unverified_items:
+  - CreateAndSetMaterialInstanceDynamic
+  - CreateAndSetMaterialInstanceDynamicFromReplIdx
+  - CreateDynamicMaterialInstance
+  - GetMaterial
+  - GetMaterialIndex
+  - GetMaterialSlotNames
+  - GetNumMaterials
+  - GetOverrideMaterial
+  - IsMaterialSlotNameValid
+  - IsVisible
+  - SetMaterial
+  - SetVisibility
+  - ToggleVisibility
 ---
 
 ## 概述

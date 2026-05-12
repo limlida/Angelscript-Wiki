@@ -1,4 +1,4 @@
-﻿---
+---
 title: "UPROPERTY 宏"
 category: entities
 date: 2026-05-08
@@ -7,6 +7,19 @@ tags:
   - Blueprint
   - 编辑器
   - 宏
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UPROPERTY.md
+verified_by: agent
+unverified_items:
+  - Attach
+  - AttachSocket
+  - Category
+  - OverrideComponent
+  - ReplicatedUsing
+  - ReplicationCondition
 ---
 
 ## 定义

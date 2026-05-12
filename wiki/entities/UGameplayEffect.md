@@ -5,6 +5,13 @@ date: 2026-05-09
 tags:
   - GAS
   - 能力系统
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UGameplayEffect.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

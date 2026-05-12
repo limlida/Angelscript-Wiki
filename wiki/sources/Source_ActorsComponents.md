@@ -8,6 +8,13 @@ tags:
   - Component
   - 演员
   - 组件
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/actors-components.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

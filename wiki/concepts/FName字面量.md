@@ -6,6 +6,13 @@ tags:
   - FName
   - 字符串
   - 性能
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/fname-literals.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

@@ -5,6 +5,13 @@ date: 2026-05-09
 tags:
   - DataAsset
   - 数据驱动
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UDataTable.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

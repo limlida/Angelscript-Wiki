@@ -1,4 +1,4 @@
-﻿---
+---
 title: "TSubclassOf 类型"
 category: entities
 date: 2026-05-08
@@ -6,6 +6,14 @@ tags:
   - 类型
   - Blueprint
   - 类引用
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Structs/TSubclassOf.md
+verified_by: agent
+unverified_items:
+  - SpawnActor
 ---
 
 ## 定义

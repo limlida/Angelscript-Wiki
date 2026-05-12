@@ -6,6 +6,13 @@ tags:
   - Actor
   - Controller
   - AI
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/AAIController.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

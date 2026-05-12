@@ -6,6 +6,13 @@ tags:
   - Struct
   - 碰撞
   - 物理形状
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Structs/FCollisionShape.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

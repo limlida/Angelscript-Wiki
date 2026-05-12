@@ -6,6 +6,14 @@ tags:
   - Component
   - 碰撞
   - 物理形状
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UCapsuleComponent.md
+verified_by: agent
+unverified_items:
+  - IsZeroExtent
 ---
 
 ## 概述

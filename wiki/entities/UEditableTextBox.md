@@ -7,6 +7,13 @@ tags:
   - Widget
   - UMG
   - 文本输入
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UEditableTextBox.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

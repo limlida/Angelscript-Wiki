@@ -7,6 +7,14 @@ tags:
   - Widget
   - UMG
   - 布局
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UBorder.md
+verified_by: agent
+unverified_items:
+  - GetDynamicMaterialSetBrush SetBrushFromTexture SetBrushFromMaterial SetBrushColor SetContentColorAndOpacity SetPadding SetHorizontalAlignment SetVerticalAlignment SetDesiredSizeScale
 ---
 
 ## 概述

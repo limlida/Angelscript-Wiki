@@ -1,4 +1,4 @@
-﻿---
+---
 title: "UStaticMeshComponent"
 category: entities
 date: 2026-05-09
@@ -6,6 +6,13 @@ tags:
   - Component
   - 渲染
   - 静态网格
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UStaticMeshComponent.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

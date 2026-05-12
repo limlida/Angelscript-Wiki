@@ -7,6 +7,13 @@ tags:
   - 开发状态
   - 平台支持
   - 已知限制
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/development-status.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

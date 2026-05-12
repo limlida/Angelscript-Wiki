@@ -7,6 +7,13 @@ tags:
   - 函数库
   - Math
   - System
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/function-libraries.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

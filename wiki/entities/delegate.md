@@ -6,6 +6,12 @@ tags:
   - 委托
   - 单播
   - 事件
+
+trust: unverified
+verified_at: 2026-05-11
+verified_against: []
+verified_by: agent
+unverified_items: []
 ---
 
 ## 定义

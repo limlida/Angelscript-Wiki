@@ -7,6 +7,13 @@ tags:
   - 时间线
   - 动画
   - 插值
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UTimelineComponent.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

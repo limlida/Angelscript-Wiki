@@ -6,6 +6,13 @@ tags:
   - Component
   - GAS
   - 游戏特定
+
+trust: verified
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UTkAbilitySystemComponent.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

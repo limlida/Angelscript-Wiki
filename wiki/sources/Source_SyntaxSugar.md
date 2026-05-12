@@ -6,6 +6,13 @@ source_count: 1
 tags:
   - 语法糖
   - 语言特性
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/Angelscript_Syntax_Sugar.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

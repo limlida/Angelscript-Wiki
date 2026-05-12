@@ -6,6 +6,13 @@ tags:
   - GAS
   - 游戏特定
   - DataAsset
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UTkAbilityTagRelationshipMapping.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

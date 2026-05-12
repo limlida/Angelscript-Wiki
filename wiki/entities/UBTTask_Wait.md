@@ -6,6 +6,13 @@ tags:
   - AI
   - 行为树
   - Task
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/API/Global/UBTTask_Wait.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述

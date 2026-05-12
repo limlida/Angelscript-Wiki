@@ -7,6 +7,13 @@ tags:
   - GameplayTag
   - 命名空间
   - 语法糖
+
+trust: partial
+verified_at: 2026-05-11
+verified_against:
+  - raw/gameplay-tags.md
+verified_by: agent
+unverified_items: []
 ---
 
 ## 概述
